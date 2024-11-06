@@ -4,6 +4,7 @@ import CourseSection from "@/components/CourseSection/CourseSection";
 import FeatureSection from "@/components/FeatureSection/FeatureSection";
 import InPerson from "@/components/InPerson/InPerson";
 import ProgramSection from "@/components/ProgramSection/ProgramSection";
+import YoutubeVsPpa from "@/components/YoutubeVsPpa/YoutubeVsPpa";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <ProgramSection/>
       <CourseSection/>
       <FeatureSection/>
+      <YoutubeVsPpa/>
     </>
   );
 }
