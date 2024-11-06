@@ -3,7 +3,7 @@ import TechImg from '../../resources/images/tech-program-img.png'
 
 const Programs=[
     {
-        id: "1",
+        id: 1,
         programMode:"Offline Program",
         programImg: TechImg,
         programAlt: "tech-img",
@@ -15,7 +15,7 @@ const Programs=[
         programBtn:"Apply Now"
     },
     {
-        id: "2",
+        id: 2,
         programMode:"Online Program",
         programImg: RenaissanceImg,
         programAlt: "Renaissance-img",
