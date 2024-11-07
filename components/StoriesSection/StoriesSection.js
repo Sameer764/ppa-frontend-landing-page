@@ -7,8 +7,8 @@ import StoryCard from '../StoryCard/StoryCard'
 
 function StoriesSection() {
   return (
-    <div className='bg-[#F1F5F9] px-[64px] py-[60px]'>
-      <div className='flex justify-between'>
+    <div className='bg-[#F1F5F9] py-[60px]'>
+      <div className='flex justify-between max-w-[1312px] mx-auto'>
         <div>
             <h1 className='text-[#000000] text-[48px] leading-[64px] tracking-wide'>They did it so can you</h1>
             <div className='flex gap-[12px] items-center mt-[20px]'>
