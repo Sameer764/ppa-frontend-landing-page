@@ -1,4 +1,5 @@
 import Banner from "@/components/Banner/Banner";
+import CommunityBanner from "@/components/CommunityBanner/CommunityBanner";
 import CompanyBanner from "@/components/CompanyBanner/CompanyBanner";
 import CourseSection from "@/components/CourseSection/CourseSection";
 import FeatureSection from "@/components/FeatureSection/FeatureSection";
@@ -24,6 +25,7 @@ export default function Home() {
       {/* <LearningPlans/> */}
       <StoriesSection/>
       <Instructor/>
+      <CommunityBanner/>
     </>
   );
 }
