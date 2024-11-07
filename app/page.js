@@ -3,7 +3,9 @@ import CompanyBanner from "@/components/CompanyBanner/CompanyBanner";
 import CourseSection from "@/components/CourseSection/CourseSection";
 import FeatureSection from "@/components/FeatureSection/FeatureSection";
 import InPerson from "@/components/InPerson/InPerson";
+import LearningPlans from "@/components/LearningPlans/LearningPlans";
 import ProgramSection from "@/components/ProgramSection/ProgramSection";
+import StoriesSection from "@/components/StoriesSection/StoriesSection";
 import TransistionSection from "@/components/TransistionSection/TransistionSection";
 import YoutubeVsPpa from "@/components/YoutubeVsPpa/YoutubeVsPpa";
 
@@ -18,6 +20,8 @@ export default function Home() {
       <FeatureSection/>
       <YoutubeVsPpa/>
       <TransistionSection/>
+      {/* <LearningPlans/> */}
+      <StoriesSection/>
     </>
   );
 }

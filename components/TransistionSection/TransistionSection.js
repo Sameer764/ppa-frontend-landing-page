@@ -9,7 +9,7 @@ function TransistionSection() {
       <h1 className='text-center text-[48px] leading-[64px] tracking-wide'>How We Help You In Transition</h1>
       <div className='flex flex-col justify-center items-center mt-[40px]'>
         <h3 className='w-full ml-20 italic text-[32px] leading-[40px] tracking-wide'>Before</h3>
-        <div className='flex gap-[24px] mt-[20px]'>
+        <div className='flex flex-wrap gap-[24px] mt-[20px]'>
             {
                 BeforeTransistion.map((before)=>(
                     <BeforeTransistionCard {...before}/>
@@ -19,7 +19,7 @@ function TransistionSection() {
       </div>
       <div className='flex flex-col justify-center items-center mt-[40px]'>
         <h3 className='w-full ml-20 italic text-[32px] leading-[40px] tracking-wide'>After</h3>
-        <div className='flex gap-[24px] mt-[20px]'>
+        <div className='flex flex-wrap gap-[24px] mt-[20px]'>
             {
                 AfterTransistion.map((after)=>(
                     <AfterTransistionCard {...after}/>

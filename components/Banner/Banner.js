@@ -7,7 +7,7 @@ import ViewIcon from '../../resources/images/view-down-arrow-icon.png'
 
 function Banner() {
   return (
-    <div className='bg-[#181B43] py-[60px] flex justify-center gap-[80px]'>
+    <div className='bg-[#181B43] py-[60px] flex flex-wrap justify-center gap-[80px]'>
         <div className='w-[734px]'>
             <h1 className='text-[#F8FAFC] font-normal text-[56px] leading-[60px]'>Become a Tech Pro!</h1>
             <h2 className='mt-3 text-[#F8FAFC] font-normal text-[24px] leading-[32px]'>Transform Your Skills with Our Expert-Led Courses!</h2>
