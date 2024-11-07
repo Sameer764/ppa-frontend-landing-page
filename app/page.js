@@ -3,6 +3,7 @@ import CompanyBanner from "@/components/CompanyBanner/CompanyBanner";
 import CourseSection from "@/components/CourseSection/CourseSection";
 import FeatureSection from "@/components/FeatureSection/FeatureSection";
 import InPerson from "@/components/InPerson/InPerson";
+import Instructor from "@/components/Instructor/Instructor";
 import LearningPlans from "@/components/LearningPlans/LearningPlans";
 import ProgramSection from "@/components/ProgramSection/ProgramSection";
 import StoriesSection from "@/components/StoriesSection/StoriesSection";
@@ -22,6 +23,7 @@ export default function Home() {
       <TransistionSection/>
       {/* <LearningPlans/> */}
       <StoriesSection/>
+      <Instructor/>
     </>
   );
 }
