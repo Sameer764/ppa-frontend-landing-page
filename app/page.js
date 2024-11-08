@@ -9,6 +9,7 @@ import LearningPlans from "@/components/LearningPlans/LearningPlans";
 import ProgramSection from "@/components/ProgramSection/ProgramSection";
 import StoriesSection from "@/components/StoriesSection/StoriesSection";
 import TransistionSection from "@/components/TransistionSection/TransistionSection";
+import YoutubeSection from "@/components/YoutubeSection/YoutubeSection";
 import YoutubeVsPpa from "@/components/YoutubeVsPpa/YoutubeVsPpa";
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
       <StoriesSection/>
       <Instructor/>
       <CommunityBanner/>
+      <YoutubeSection/>
     </>
   );
 }
