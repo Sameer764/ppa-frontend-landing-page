@@ -4,6 +4,7 @@ import CommunityBanner from "@/components/CommunityBanner/CommunityBanner";
 import CompanyBanner from "@/components/CompanyBanner/CompanyBanner";
 import CourseSection from "@/components/CourseSection/CourseSection";
 import FeatureSection from "@/components/FeatureSection/FeatureSection";
+import Footer from "@/components/Footer/Footer";
 import InPerson from "@/components/InPerson/InPerson";
 import Instructor from "@/components/Instructor/Instructor";
 import LearningPlans from "@/components/LearningPlans/LearningPlans";
@@ -30,6 +31,7 @@ export default function Home() {
       <CommunityBanner/>
       <YoutubeSection/>
       <BlogsSection/>
+      <Footer/>
     </>
   );
 }
