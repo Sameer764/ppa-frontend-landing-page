@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 function ProgramCard({id,programMode,programImg,programAlt,programLocation,programHead,programFeatures,programBtn}) {
   return (
-    <div key={id}>
+    <div>
         <div>
             <h3 className='text-[#020617] text-[32px] leading-[40px] tracking-wide'>{programMode}</h3>
             <div className='mt-[24px] w-[646px] bg-[#FFFFFF] p-[20px] rounded-[20px]'>

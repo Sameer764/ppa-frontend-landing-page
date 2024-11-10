@@ -10,7 +10,7 @@ function ProgramSection() {
       <div className='flex justify-center gap-[24px] mt-[40px]'>
         {
             Programs.map((program)=>(
-                <ProgramCard {...program}/>
+                <ProgramCard key={program.id} {...program}/>
             ))
         }
       </div>

@@ -25,7 +25,7 @@ export default function Home() {
       <FeatureSection/>
       <YoutubeVsPpa/>
       <TransistionSection/>
-      {/* <LearningPlans/> */}
+      <LearningPlans/>
       <StoriesSection/>
       <Instructor/>
       <CommunityBanner/>
