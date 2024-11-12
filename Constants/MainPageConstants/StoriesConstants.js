@@ -1,11 +1,11 @@
-import StudentImg1 from '../../resources/images/student-img-1.png'
-import StudentImg2 from '../../resources/images/student-img-2.png'
-import StudentImg3 from '../../resources/images/student-img-3.png'
-import StudentImg4 from '../../resources/images/student-img-4.png'
+import StudentImg1 from '../../public/resources/images/student-img-1.png'
+import StudentImg2 from '../../public/resources/images/student-img-2.png'
+import StudentImg3 from '../../public/resources/images/student-img-3.png'
+import StudentImg4 from '../../public/resources/images/student-img-4.png'
 
-import CompanyLogo1 from '../../resources/images/company-logo-1.png'
-import CompanyLogo2 from '../../resources/images/company-logo-2.png'
-import CompanyLogo3 from '../../resources/images/company-logo-3.png'
+import CompanyLogo1 from '../../public/resources/images/company-logo-1.png'
+import CompanyLogo2 from '../../public/resources/images/company-logo-2.png'
+import CompanyLogo3 from '../../public/resources/images/company-logo-3.png'
 
 const StoriesStudents=[
     {

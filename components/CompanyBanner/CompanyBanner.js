@@ -1,13 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
-import AdobeIcon from '../../resources/images/adobe-icon.png'
-import GoogleIcon from '../../resources/images/google-icon.png'
-import FlipkartIcon from '../../resources/images/flipkart-icon.png'
-import MicrosoftIcon from '../../resources/images/microsoft-icon.png'
-import AmazonIcon from '../../resources/images/amazon-icon.png'
-import WalmartIcon from '../../resources/images/walmart-icon.png'
-import PaytmIcon from '../../resources/images/paytm-icon.png'
-import OracleIcon from '../../resources/images/oracle-icon.png'
+import AdobeIcon from '../../public/resources/images/adobe-icon.png'
+import GoogleIcon from '../../public/resources/images/google-icon.png'
+import FlipkartIcon from '../../public/resources/images/flipkart-icon.png'
+import MicrosoftIcon from '../../public/resources/images/microsoft-icon.png'
+import AmazonIcon from '../../public/resources/images/amazon-icon.png'
+import WalmartIcon from '../../public/resources/images/walmart-icon.png'
+import PaytmIcon from '../../public/resources/images/paytm-icon.png'
+import OracleIcon from '../../public/resources/images/oracle-icon.png'
 
 function CompanyBanner() {
   return (

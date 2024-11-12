@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import BeforeCross from '../../resources/images/before-cross-icon.png'
+import BeforeCross from '../../public/resources/images/before-cross-icon.png'
 
 function BeforeTransistionCard({id,BeforeImg,BeforeTxt}) {
   return (

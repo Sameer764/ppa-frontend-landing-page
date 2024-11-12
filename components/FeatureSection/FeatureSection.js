@@ -4,16 +4,16 @@ import FeatureCard from '../FeatureCard/FeatureCard'
 
 function FeatureSection() {
   return (
-    <div className='text-center bg-[#F1F5F9] px-[64px] py-[60px]'>
-      <h1 className='text-[48px] leading-[64px] text-[#231F20]'>Why Choose Our Course?</h1>
-      <div className='mt-[40px] flex flex-wrap gap-[20px] justify-center'>
+    <div className='text-center bg-[#F1F5F9] lg:px-[64px] lg:py-[60px] px-[20px] py-[40px]'>
+      <h1 className='lg:text-[48px] lg:leading-[64px] text-[24px] leading-[32px] text-[#231F20]'>Why Choose Our Course?</h1>
+      <div className='lg:mt-[40px] mt-[20px] flex flex-wrap lg:gap-[20px] gap-[12px] justify-center'>
         {
             Features.map((feature)=>(
                 <FeatureCard {...feature}/>
             ))
         }
       </div>
-      <button className='w-[316px] mx-auto mt-[40px] py-[12px] bg-[#3940A0] text-[#ffffff] text-[16px] leading-[24px] rounded-[10px]'>Start 7-Days Free Trial</button>
+      <button className='w-[316px] mx-auto lg:mt-[40px] mt-[20px] py-[12px] bg-[#3940A0] text-[#ffffff] text-[16px] leading-[24px] rounded-[10px]'>Start 7-Days Free Trial</button>
     </div>
   )
 }

@@ -1,23 +1,41 @@
-.flexible-width{
-    width: 247px;
+@media (min-width: 1024px) {
+    .flexible-width{
+        width: 247px;
+    }
+    
+    .project-width{
+        width: 266px;
+    }
+    
+    .cohort-width{
+        width: 301px;
+    }
+    
+    .mentor-width{
+        width: 384px;
+    }
+    
+    .certificate-width{
+        width: 204px;
+    }
+    
+    .doubt-width{
+        width: 249px;
+    }
 }
 
-.project-width{
-    width: 266px;
+.featureTxt{
+    border-radius: 15px;
+    border: 3px solid transparent;
+    transition: border 0.5s;
+    animation: borderColorChange 1s infinite alternate;
 }
 
-.cohort-width{
-    width: 301px;
-}
-
-.mentor-width{
-    width: 384px;
-}
-
-.certificate-width{
-    width: 204px;
-}
-
-.doubt-width{
-    width: 249px;
-}
+@keyframes borderColorChange {
+    from {
+      border-color: #3498db;
+    }
+    to {
+      border-color: #f39c12;
+    }
+  }

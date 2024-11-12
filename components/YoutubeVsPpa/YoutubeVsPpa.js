@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import PpaIcon from '../../resources/images/ppa-icon-img.png'
-import YoutubeIcon from '../../resources/images/youtube-icon-img.png'
+import PpaIcon from '../../public/resources/images/ppa-icon-img.png'
+import YoutubeIcon from '../../public/resources/images/youtube-icon-img.png'
 import { FeaturesData } from '@/Constants/MainPageConstants/YoutubeVsPpaConstants'
 import FeaturesTable from '../FeaturesTable/FeaturesTable'
 

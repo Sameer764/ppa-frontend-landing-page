@@ -1,9 +1,9 @@
-import StepMap3 from '../../resources/images/step-3-map.png'
-import StepMap4 from '../../resources/images/step-4-map.png'
-import StepMap1 from '../../resources/images/step-1-map.png'
-import StepMap2 from '../../resources/images/step-2-map.png'
-import StudentImg from '../../resources/images/learning-plan-student.png'
-import StudentDescImg from '../../resources/images/student-desc-img.png'
+import StepMap3 from '../../public/resources/images/step-3-map.png'
+import StepMap4 from '../../public/resources/images/step-4-map.png'
+import StepMap1 from '../../public/resources/images/step-1-map.png'
+import StepMap2 from '../../public/resources/images/step-2-map.png'
+import StudentImg from '../../public/resources/images/learning-plan-student.png'
+import StudentDescImg from '../../public/resources/images/student-desc-img.png'
 
 const StepsData=[
     {

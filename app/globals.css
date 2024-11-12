@@ -14,10 +14,43 @@
   }
 }
 
+@layer base {
+  html, body {
+    font-family: "Gilroy-Bold", "Gilroy-SemiBold", "Gilroy-Regular" , Arial, Helvetica, sans-serif;
+  }
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('/resources/fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: 400; /* Adjust weight as needed */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-SemiBold';
+  src: url('/resources/fonts/Gilroy-SemiBold.ttf') format('truetype');
+  font-weight: 400; /* Adjust weight as needed */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('/resources/fonts/Gilroy-Regular.ttf') format('truetype');
+  font-weight: 400; /* Adjust weight as needed */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('/resources/fonts/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 400; /* Adjust weight as needed */
+  font-style: normal;
 }
 
 .tech-img{

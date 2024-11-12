@@ -1,12 +1,12 @@
-import BackendImg from '../../resources/images/course-backend-img.png'
-import LowLevelImg from '../../resources/images/course-low-level-img.png'
-import DsaImg from '../../resources/images/course-dsa-img.png'
-import CppImg from '../../resources/images/course-cpp-img.png'
-import PythonImg from '../../resources/images/course-python-img.png'
-import FrontendImg from '../../resources/images/course-frontend-img.png'
-import courseEnrolled from '../../resources/images/course-enrolled.png'
-import CourseRating from '../../resources/images/course-rating.png'
-import CourseType from '../../resources/images/course-type.png'
+import BackendImg from '../../public/resources/images/course-backend-img.png'
+import LowLevelImg from '../../public/resources/images/course-low-level-img.png'
+import DsaImg from '../../public/resources/images/course-dsa-img.png'
+import CppImg from '../../public/resources/images/course-cpp-img.png'
+import PythonImg from '../../public/resources/images/course-python-img.png'
+import FrontendImg from '../../public/resources/images/course-frontend-img.png'
+import courseEnrolled from '../../public/resources/images/course-enrolled.png'
+import CourseRating from '../../public/resources/images/course-rating.png'
+import CourseType from '../../public/resources/images/course-type.png'
 
 const Courses=[
     {

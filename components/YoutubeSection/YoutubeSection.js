@@ -2,11 +2,11 @@
 import React from 'react'
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import youtubeImg1 from '../../resources/images/youtube-img-1.png'
-import youtubeImg2 from '../../resources/images/youtube-img-2.png'
-import youtubeImg3 from '../../resources/images/youtube-img-3.png'
-import youtubeImg4 from '../../resources/images/youtube-img-4.png'
-import youtubeImg5 from '../../resources/images/youtube-img-5.png'
+import youtubeImg1 from '../../public/resources/images/youtube-img-1.png'
+import youtubeImg2 from '../../public/resources/images/youtube-img-2.png'
+import youtubeImg3 from '../../public/resources/images/youtube-img-3.png'
+import youtubeImg4 from '../../public/resources/images/youtube-img-4.png'
+import youtubeImg5 from '../../public/resources/images/youtube-img-5.png'
 
 // Import Swiper styles
 import 'swiper/css';

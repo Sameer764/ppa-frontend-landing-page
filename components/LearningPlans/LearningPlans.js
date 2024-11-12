@@ -1,5 +1,5 @@
 import React from 'react'
-import PersonalisedBg from '../../resources/images/personalised-bg.png'
+import PersonalisedBg from '../../public/resources/images/personalised-bg.png'
 import { StepsData } from '@/Constants/MainPageConstants/LearningPlansConstants'
 import StepCard from '../StepCard/StepCard'
 

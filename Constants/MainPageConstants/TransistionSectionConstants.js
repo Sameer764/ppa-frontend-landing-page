@@ -1,11 +1,11 @@
-import BeforeImg1 from '../../resources/images/before-img-1.png'
-import BeforeImg2 from '../../resources/images/before-img-2.png'
-import BeforeImg3 from '../../resources/images/before-img-3.png'
-import BeforeImg4 from '../../resources/images/before-img-4.png'
-import AfterImg1 from '../../resources/images/after-img-1.png'
-import AfterImg2 from '../../resources/images/after-img-2.png'
-import AfterImg3 from '../../resources/images/after-img-3.png'
-import AfterImg4 from '../../resources/images/after-img-4.png'
+import BeforeImg1 from '../../public/resources/images/before-img-1.png'
+import BeforeImg2 from '../../public/resources/images/before-img-2.png'
+import BeforeImg3 from '../../public/resources/images/before-img-3.png'
+import BeforeImg4 from '../../public/resources/images/before-img-4.png'
+import AfterImg1 from '../../public/resources/images/after-img-1.png'
+import AfterImg2 from '../../public/resources/images/after-img-2.png'
+import AfterImg3 from '../../public/resources/images/after-img-3.png'
+import AfterImg4 from '../../public/resources/images/after-img-4.png'
 
 const BeforeTransistion=[
     {

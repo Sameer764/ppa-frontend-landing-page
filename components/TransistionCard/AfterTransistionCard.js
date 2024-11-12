@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import AfterTick from '../../resources/images/after-tick-img.png'
+import AfterTick from '../../public/resources/images/after-tick-img.png'
 
 function AfterTransistionCard({id,AfterImg,AfterTxt}) {
     return (

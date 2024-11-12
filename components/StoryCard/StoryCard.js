@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import LinkedinIcon from '../../resources/images/linkedin-icon.png'
+import LinkedinIcon from '../../public/resources/images/linkedin-icon.png'
 import Styles from './StoryCard.module.css'
 
 function StoryCard({id,studentPic,studentName,studentRole,studentCompany,linkedinLink,studentReview}) {

@@ -1,13 +1,13 @@
-import ProgramImg1 from '../../resources/images/footer-program-img-1.png'
-import ProgramImg2 from '../../resources/images/footer-program-img-2.png'
-import PhoneIcon from '../../resources/images/contact-phone-icon.png'
-import MapIcon from '../../resources/images/contact-map-icon.png'
-import MailIcon from '../../resources/images/contact-mail-icon.png'
-import TelegramIcon from '../../resources/images/social-telegram-icon.png'
-import FacebookIcon from '../../resources/images/social-facebook-icon.png'
-import LinkedinIcon from '../../resources/images/social-linkedin-icon.png'
-import InstagramIcon from '../../resources/images/social-instagram-icon.png'
-import YoutubeIcon from '../../resources/images/social-youtube-icon.png'
+import ProgramImg1 from '../../public/resources/images/footer-program-img-1.png'
+import ProgramImg2 from '../../public/resources/images/footer-program-img-2.png'
+import PhoneIcon from '../../public/resources/images/contact-phone-icon.png'
+import MapIcon from '../../public/resources/images/contact-map-icon.png'
+import MailIcon from '../../public/resources/images/contact-mail-icon.png'
+import TelegramIcon from '../../public/resources/images/social-telegram-icon.png'
+import FacebookIcon from '../../public/resources/images/social-facebook-icon.png'
+import LinkedinIcon from '../../public/resources/images/social-linkedin-icon.png'
+import InstagramIcon from '../../public/resources/images/social-instagram-icon.png'
+import YoutubeIcon from '../../public/resources/images/social-youtube-icon.png'
 
 const AboutUs=[
     {

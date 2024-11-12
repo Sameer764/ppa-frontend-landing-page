@@ -1,7 +1,7 @@
-import BlogProfile from '../../resources/images/blog-profile-pic.png'
-import BlogImage1 from '../../resources/images/blog-image-1.png'
-import BlogImage2 from '../../resources/images/blog-image-2.png'
-import BlogImage3 from '../../resources/images/blog-image-3.png'
+import BlogProfile from '../../public/resources/images/blog-profile-pic.png'
+import BlogImage1 from '../../public/resources/images/blog-image-1.png'
+import BlogImage2 from '../../public/resources/images/blog-image-2.png'
+import BlogImage3 from '../../public/resources/images/blog-image-3.png'
 
 const BlogsData=[
     {

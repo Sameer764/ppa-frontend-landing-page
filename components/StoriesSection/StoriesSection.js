@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import StudentRatingImg from '../../resources/images/stories-rating-img.png'
-import StudentReviewImg from '../../resources/images/stories-review-img.png'
+import StudentRatingImg from '../../public/resources/images/stories-rating-img.png'
+import StudentReviewImg from '../../public/resources/images/stories-review-img.png'
 import { StoriesStudents } from '@/Constants/MainPageConstants/StoriesConstants'
 import StoryCard from '../StoryCard/StoryCard'
 

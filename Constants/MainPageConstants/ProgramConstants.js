@@ -1,5 +1,5 @@
-import RenaissanceImg from '../../resources/images/renaissance-program-img.png'
-import TechImg from '../../resources/images/tech-program-img.png'
+import RenaissanceImg from '../../public/resources/images/renaissance-program-img.png'
+import TechImg from '../../public/resources/images/tech-program-img.png'
 
 const Programs=[
     {

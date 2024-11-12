@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import AmazonLogo from '../../resources/images/amazon-logo.png'
-import MentorImg from '../../resources/images/mentor-vivek-img.png'
-import Linkedin from '../../resources/images/linkedin-icon.png'
+import AmazonLogo from '../../public/resources/images/amazon-logo.png'
+import MentorImg from '../../public/resources/images/mentor-vivek-img.png'
+import Linkedin from '../../public/resources/images/linkedin-icon.png'
 
 function Instructor() {
   return (

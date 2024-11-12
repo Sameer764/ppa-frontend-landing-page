@@ -1,7 +1,7 @@
-import CrossRed from '../../resources/images/feature-cross-red.png'
-import CrossWhite from '../../resources/images/feature-cross-white.png'
-import TickGreen from '../../resources/images/feature-tick-green.png'
-import TickWhite from '../../resources/images/feature-tick-white.png'
+import CrossRed from '../../public/resources/images/feature-cross-red.png'
+import CrossWhite from '../../public/resources/images/feature-cross-white.png'
+import TickGreen from '../../public/resources/images/feature-tick-green.png'
+import TickWhite from '../../public/resources/images/feature-tick-white.png'
 
 const FeaturesData=[
     {

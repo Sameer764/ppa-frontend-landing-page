@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import BannerImg from'../../resources/images/community-banner-img.png'
+import BannerImg from'../../public/resources/images/community-banner-img.png'
 
 function CommunityBanner() {
   return (
