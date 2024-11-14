@@ -42,15 +42,13 @@
     gap: 8px;
     top: 25%;
     left: 10%;
-    transform: translateX(-100%);
-    filter: blur(3px);
+    transform: translateX(-80%);
     opacity: 0;
     transition: all 1s ease;
 }
 
 .show-blue-card{
     opacity: 1;
-    filter: blur(0);
     transform: translateX(0);
 }
 
@@ -66,15 +64,13 @@
     gap: 34px;
     top: 20%;
     left: -6.5%;
-    filter: blur(3px);
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateX(70%);
     transition: all 1s ease;
 }
 
 .show-green-card{
     opacity: 1;
-    filter: blur(0);
     transform: translateX(0);
 }
 
@@ -92,14 +88,12 @@
     top: 35%;
     left: 0;
     opacity: 0;
-    filter: blur(3px);
-    transform: translateX(-100%);
+    transform: translateX(-50%);
     transition: all 1s ease;
 }
 
 .show-orange-card{
     opacity: 1;
-    filter: blur(0);
     transform: translateX(0);
 }
 
@@ -116,14 +110,12 @@
     top: 50%;
     left: 13%;
     opacity: 0;
-    filter: blur(3px);
-    transform: translateX(100%);
+    transform: translateX(30%);
     transition: all 1s ease;
 }
 
 .show-red-card{
     opacity: 1;
-    filter: blur(0);
     transform: translateX(0);
 }
 
@@ -134,14 +126,12 @@
 }
 
 .last-card{
-    transform: translateX(10%);
-    opacity: 0;
-    filter: blur(3px);
+    transform: translateY(100%);
+    opacity: 1;
     transition: all 1s ease;
 }
 
 .show-last-card{
     opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
+    transform: translateY(0);
 }

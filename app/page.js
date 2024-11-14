@@ -1,3 +1,5 @@
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Banner from "@/components/Banner/Banner";
 import BlogsSection from "@/components/BlogsSection/BlogsSection";
 import CommunityBanner from "@/components/CommunityBanner/CommunityBanner";
@@ -17,21 +19,23 @@ import YoutubeVsPpa from "@/components/YoutubeVsPpa/YoutubeVsPpa";
 export default function Home() {
   return (
     <>
-      <Banner/>
-      <InPerson/>
-      <CompanyBanner/>
-      <ProgramSection/>
-      <CourseSection/>
-      <FeatureSection/>
-      <YoutubeVsPpa/>
-      <TransistionSection/>
-      <LearningPlans/>
-      <StoriesSection/>
-      <Instructor/>
-      <CommunityBanner/>
-      <YoutubeSection/>
-      <BlogsSection/>
-      <Footer/>
+      <div className="ppa-landing-page">
+        <Banner/>
+        <InPerson/>
+        <CompanyBanner/>
+        <ProgramSection/>
+        <CourseSection/>
+        <FeatureSection/>
+        <YoutubeVsPpa/>
+        <TransistionSection/>
+        <LearningPlans/>
+        <StoriesSection/>
+        <Instructor/>
+        <CommunityBanner/>
+        <YoutubeSection/>
+        <BlogsSection/>
+        <Footer/>
+      </div>
     </>
   );
 }

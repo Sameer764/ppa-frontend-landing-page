@@ -54,7 +54,7 @@ function StepCard({ id, stepWidth, stepNo, stepClass, stepDesc, stepMap, stepStu
         <ul>
           {
             stepDesc?.map((desc, index) => (
-              <li className='text-[16px] leading-[24px] tracking-wide text-[#191d23]' key={index}>{desc}</li>
+              <li className='font-gilroymedium text-[16px] leading-[24px] tracking-wide text-[#191d23]' key={index}>{desc}</li>
             ))
           }
         </ul>

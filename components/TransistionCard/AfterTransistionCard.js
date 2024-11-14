@@ -13,7 +13,7 @@ function AfterTransistionCard({id,AfterImg,AfterTxt}) {
               <Image src={AfterImg} alt='after-img' layout="fill"  objectFit="contain"/>
           </div>
         </div>
-        <h3 className='mt-[20px] text-[#020617] text-[20px] leading-[28px] tracking-wide text-center'>{AfterTxt}</h3>
+        <h3 className='font-gilroysemibold mt-[20px] text-[#020617] text-[20px] leading-[28px] tracking-wide text-center'>{AfterTxt}</h3>
       </div>
     )
   }

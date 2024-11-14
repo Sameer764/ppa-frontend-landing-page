@@ -13,7 +13,7 @@ function BeforeTransistionCard({id,BeforeImg,BeforeTxt}) {
             <Image src={BeforeImg} alt='before-img' layout="fill"  objectFit="contain"/>
         </div>
       </div>
-      <h3 className='m  t-[20px] text-[#020617] text-[20px] leading-[28px] tracking-wide text-center'>{BeforeTxt}</h3>
+      <h3 className='font-gilroysemibold mt-[20px] text-[#020617] text-[20px] leading-[28px] tracking-wide text-center'>{BeforeTxt}</h3>
     </div>
   )
 }

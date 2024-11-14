@@ -8,35 +8,65 @@ import AmazonIcon from '../../public/resources/images/amazon-icon.png'
 import WalmartIcon from '../../public/resources/images/walmart-icon.png'
 import PaytmIcon from '../../public/resources/images/paytm-icon.png'
 import OracleIcon from '../../public/resources/images/oracle-icon.png'
+import styles from './CompanyBanner.module.css'
+
 
 function CompanyBanner() {
   return (
     <div className='py-[20px]'>
       <h2 className='text-center text-xl text-[#000000]'>Our Students are placed at:</h2>
-      <div className='flex justify-center items-center gap-[80px] mt-[20px]'>
-        <div className='w-[100px]'>
-            <Image src={GoogleIcon} alt="google-icon"/>
+      <div className={styles.logos}>
+        <div className={`${styles.logoSlide} flex justify-center items-center gap-[80px] mt-[20px]`}>
+          <div className='w-[100px]'>
+              <Image src={GoogleIcon} alt="google-icon"/>
+          </div>
+          <div className='w-[100px]'>
+              <Image src={FlipkartIcon} alt="flipkart-icon"/>
+          </div>
+          <div className='w-[100px]'>
+              <Image src={AdobeIcon} alt="adobe-icon"/>
+          </div>
+          <div className='w-[100px]'> 
+              <Image src={MicrosoftIcon} alt="microsoft-icon"/>
+          </div>
+          <div className='w-[100px]'>
+              <Image src={AmazonIcon} alt="amazon-icon"/>
+          </div>
+          <div className='w-[100px]'>
+              <Image src={WalmartIcon} alt="walmart-icon"/>
+          </div>
+          <div className='w-[100px]'>
+              <Image src={PaytmIcon} alt="paytm-icon"/>
+          </div>
+          <div className='w-[100px]'>
+              <Image src={OracleIcon} alt="oracle-icon"/>
+          </div>
         </div>
-        <div className='w-[100px]'>
-            <Image src={FlipkartIcon} alt="flipkart-icon"/>
-        </div>
-        <div className='w-[100px]'>
-            <Image src={AdobeIcon} alt="adobe-icon"/>
-        </div>
-        <div className='w-[100px]'> 
-            <Image src={MicrosoftIcon} alt="microsoft-icon"/>
-        </div>
-        <div className='w-[100px]'>
-            <Image src={AmazonIcon} alt="amazon-icon"/>
-        </div>
-        <div className='w-[100px]'>
-            <Image src={WalmartIcon} alt="walmart-icon"/>
-        </div>
-        <div className='w-[100px]'>
-            <Image src={PaytmIcon} alt="paytm-icon"/>
-        </div>
-        <div className='w-[100px]'>
-            <Image src={OracleIcon} alt="oracle-icon"/>
+        <div className={`${styles.logoSlide} ml-[80px] flex justify-center items-center gap-[80px] mt-[20px]`}>
+          <div className='w-[100px]'>
+              <Image src={GoogleIcon} alt="google-icon"/>
+          </div>
+          <div className='w-[100px]'>
+              <Image src={FlipkartIcon} alt="flipkart-icon"/>
+          </div>
+          <div className='w-[100px]'>
+              <Image src={AdobeIcon} alt="adobe-icon"/>
+          </div>
+          <div className='w-[100px]'> 
+              <Image src={MicrosoftIcon} alt="microsoft-icon"/>
+          </div>
+          <div className='w-[100px]'>
+              <Image src={AmazonIcon} alt="amazon-icon"/>
+          </div>
+          <div className='w-[100px]'>
+              <Image src={WalmartIcon} alt="walmart-icon"/>
+          </div>
+          <div className='w-[100px]'>
+              <Image src={PaytmIcon} alt="paytm-icon"/>
+          </div>
+          <div className='w-[100px]'>
+              <Image src={OracleIcon} alt="oracle-icon"/>
+          </div>
         </div>
       </div>
     </div>

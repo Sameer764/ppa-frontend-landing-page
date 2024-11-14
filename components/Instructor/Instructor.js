@@ -10,7 +10,7 @@ function Instructor() {
       <h1 className="relative text-3xl text-black pb-2 text-center">
         <span className='text-[48px] leading-[64px] tracking-wide'>Learn with Industry Experienced Instructor</span>
         <span
-            className="absolute left-[530px] bottom-0 w-[700px] h-[4px] bg-[#4659CA]"
+            className="absolute left-[530px] bottom-0 w-[720px] h-[4px] bg-[#4659CA]"
             style={{ marginTop: '4px' }}
         ></span>
       </h1>
@@ -19,7 +19,7 @@ function Instructor() {
             <Image src={MentorImg} alt='mentor-img'/>
         </div>
         <div className='max-w-[839px]'>
-            <p className='text-[20px] leading-[28px] tracking-wide'>Vivek has taught 10,000+ students through on campus workshops and online courses on Interview Preparation. He has worked at Amazon with its High Scale Systems for three years after graduating from IIT. He is loved by his students for his lucid in-depth explanations and ability to make people think through problems.</p>
+            <p className='font-gilroyregular text-[20px] leading-[28px] tracking-wide'>Vivek has taught 10,000+ students through on campus workshops and online courses on Interview Preparation. He has worked at Amazon with its High Scale Systems for three years after graduating from IIT. He is loved by his students for his lucid in-depth explanations and ability to make people think through problems.</p>
             <div className='mt-[20px]'>
                 <h3 className='text-[20px] leading-[28px] tracking-wide'>Vivekanand Vivek</h3>
                 <div className='flex items-center gap-[12px]'>

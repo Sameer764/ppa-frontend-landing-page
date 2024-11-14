@@ -4,6 +4,7 @@ import StudentRatingImg from '../../public/resources/images/stories-rating-img.p
 import StudentReviewImg from '../../public/resources/images/stories-review-img.png'
 import { StoriesStudents } from '@/Constants/MainPageConstants/StoriesConstants'
 import StoryCard from '../StoryCard/StoryCard'
+import UpArrow from '../../public/resources/images/up-arrow-white-icon.png'
 
 function StoriesSection() {
   return (
@@ -21,13 +22,20 @@ function StoriesSection() {
             </div>
         </div>
         <div>
-            <button className='w-[228px] bg-[#020617] py-[12px] text-[#ffffff] text-[16px] leading-[24px] tracking-wide rounded-[12px]'>Read More Stories</button>
+            <button className='flex justify-center gap-[4px] items-center w-[228px] bg-[#020617] py-[12px] rounded-[12px]'>
+              <span className='inline-block text-[#ffffff] text-[16px] leading-[24px] tracking-wide'>
+                Read More Stories
+              </span>
+              <span className='inline-block'>
+                  <Image src={UpArrow} width={24}/>
+              </span>
+            </button>
         </div>
       </div>
       <div className='mt-[40px] flex flex-wrap justify-center gap-[24px]'>
             {
                 StoriesStudents.map((student)=>(
-                    <StoryCard {...student}/>
+                    <StoryCard key={student.id} {...student}/>
                 ))
             }
        </div>

@@ -5,18 +5,18 @@ import { AboutUs, PopularPrograms, Courses, Contacts, Socials } from '@/Constant
 function Footer() {
     return (
         <div className='bg-[#181b43] py-[40px] flex justify-center'>
-            <div className='max-w-[1312px] flex gap-[40px]'>
+            <div className='flex gap-[40px]'>
                 <div>
                     <h3 className='text-[#f8fafc] text-[16px] leading-[20px] tracking-wide uppercase'>About us</h3>
                     <div className='flex flex-col gap-[20px] mt-[12px]'>
                         {
                             AboutUs.map((about) => (
-                                <p key={about.id} className='text-[#f8fafc] text-[14px] leading-[20px] tracking-wide'>{about.aboutTxt}</p>
+                                <p key={about.id} className='font-gilroyregular text-[#f8fafc] text-[14px] leading-[20px] tracking-wide'>{about.aboutTxt}</p>
                             ))
                         }
                     </div>
                 </div>
-                <div>
+                <div className='w-[431px]'>
                     <h3 className='text-[#f8fafc] text-[16px] leading-[20px] tracking-wide uppercase'>Popular ProgramS</h3>
                     <div className='mt-[12px] flex flex-col gap-[20px]'>
                         {
@@ -27,7 +27,6 @@ function Footer() {
                                     </div>
                                     <div className='max-w-[296px]'>
                                         <h3 className='text-[#f8fafc] text-[14px] leading-[20px] tracking-wide'>{program.programName}</h3>
-                                        <p className='mt-[4px] text-[#f8fafc] text-[12px] leading-[16px] tracking-wide'>{program.programDesc}</p>
                                     </div>
                                 </div>
                             ))
@@ -39,7 +38,7 @@ function Footer() {
                     <div className='mt-[12px] flex flex-col gap-[20px]'>
                         {
                             Courses.map((course) => (
-                                <p key={course.id} className='text-[#f8fafc] text-[14px] leading-[20px] tracking-wide'>{course.courseName}</p>
+                                <p key={course.id} className='font-gilroyregular text-[#f8fafc] text-[14px] leading-[20px] tracking-wide'>{course.courseName}</p>
                             ))
                         }
                     </div>
@@ -50,11 +49,11 @@ function Footer() {
                         <div className='mt-[12px] flex flex-col gap-[20px] max-w-[271px]'>
                             {
                                 Contacts.map((contact) => (
-                                    <div className='flex gap-[8px] items-center'>
-                                        <div className='w-[24px]'>
-                                            <Image src={contact.contactIcon} alt='contact-icon' />
+                                    <div key={contact.id} className='flex gap-[8px] items-center'>
+                                        <div className={`${contact.id === 2 ? 'w-[35px]' : 'w-[24px]'}`}>
+                                            <Image src={contact.contactIcon} width={24} alt='contact-icon' />
                                         </div>
-                                        <h3 className='text-[#f8fafc] text-[14px] leading-[20px] tracking-wide'>{contact.contactTxt}</h3>
+                                        <h3 className='font-gilroyregular text-[#f8fafc] text-[14px] leading-[20px] tracking-wide'>{contact.contactTxt}</h3>
                                     </div>
                                 ))
                             }
@@ -74,7 +73,7 @@ function Footer() {
                             </div>
                         </div>
                         <div className='mt-[40px]'>
-                            <h3 className='text-[#f8fafc] text-[14px] leading-[20px] tracking-wide'>All Right Reserved with @Programming Pathshala</h3>
+                            <h3 className='font-gilroyregular text-[#f8fafc] text-[14px] leading-[20px] tracking-wide'>All Right Reserved with @Programming Pathshala</h3>
                         </div>
                     </div>
                 </div>

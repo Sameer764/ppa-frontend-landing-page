@@ -13,13 +13,13 @@ function CommunityBanner() {
                 <h2 className='text-[48px] leading-[64px] tracking-wide text-[#ffffff]'>Learn for Free</h2>
                 <h2 className='text-[48px] leading-[64px] tracking-wide text-[#ffffff]'>Crack Top Tech Companies</h2>
                 <div className='flex gap-[12px] mt-[12px]'>
-                    <div className='bg-[#f8fafc] py-[12px] px-[24px] rounded-[32px]'>
+                    <div className='font-gilroymedium bg-[#f8fafc] py-[12px] px-[24px] rounded-[32px]'>
                          Daily DSA Problem Solving
                     </div>
-                    <div className='bg-[#f8fafc] py-[12px] px-[24px] rounded-[32px]'>
+                    <div className='font-gilroymedium bg-[#f8fafc] py-[12px] px-[24px] rounded-[32px]'>
                         Community Support
                     </div>
-                    <div className='bg-[#f8fafc] py-[12px] px-[24px] rounded-[32px]'>
+                    <div className='font-gilroymedium bg-[#f8fafc] py-[12px] px-[24px] rounded-[32px]'>
                         Earning Cool Rewards
                     </div>
                 </div>

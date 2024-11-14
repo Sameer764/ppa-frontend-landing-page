@@ -10,7 +10,7 @@ function CourseSection() {
         <div className='lg:mt-[40px] mt-[20px] flex flex-wrap lg:gap-[24px] gap-[40px] justify-center'>
             {
                 Courses.map((course)=>(
-                    <CertificationCard {...course}/>
+                    <CertificationCard key={course.id} {...course}/>
                 ))
             }
         </div>

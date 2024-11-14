@@ -1,5 +1,6 @@
 import ProgramImg1 from '../../public/resources/images/footer-program-img-1.png'
 import ProgramImg2 from '../../public/resources/images/footer-program-img-2.png'
+import ProgramImg3 from '../../public/resources/images/footer-program-img-3.png'
 import PhoneIcon from '../../public/resources/images/contact-phone-icon.png'
 import MapIcon from '../../public/resources/images/contact-map-icon.png'
 import MailIcon from '../../public/resources/images/contact-mail-icon.png'
@@ -47,44 +48,42 @@ const PopularPrograms=[
         id:1,
         programImg:ProgramImg1,
         programName:"Tech Fellowship Program",
-        programDesc:"Accelerated Learning to be a Next-Gen Software Engineer.  Learn by Building Projects with Tech Leads, Engineers, etc."
     },
     {
         id:2,
         programImg:ProgramImg2,
         programName:"Renaissance for Top Tech  Companies",
-        programDesc:"Master Data Structures & Algorithms and System Design. Become 100% Coding ready and Crack Top-notch Tech roles."
-    }
+    },
+    {
+        id:3,
+        programImg:ProgramImg3,
+        programName:"Low Level Design & Concurrency",
+    },
 ]
 
 const Courses=[
     {
         id:1,
-        courseName:"Low Level Design & Concurrency",
-        courseLink:""
-    },
-    {
-        id:2,
         courseName:"Backend Development with Java Spring Boot",
         courseLink:""
     },
     {
-        id:3,
+        id:2,
         courseName:"Data Structures & Algorithms Essential",
         courseLink:""
     },
     {
-        id:4,
+        id:3,
         courseName:"Become a Python Expert",
         courseLink:""
     },
     {
-        id:5,
+        id:4,
         courseName:"Begin with Programming in C++",
         courseLink:""
     },
     {
-        id:6,
+        id:5,
         courseName:"Frontend Engineering Pro",
         courseLink:""
     },
@@ -111,12 +110,12 @@ const Contacts=[
 const Socials=[
     {
         id:1,
-        socialIcon:TelegramIcon,
+        socialIcon:YoutubeIcon,
         socialLink:""
     },
     {
         id:2,
-        socialIcon:FacebookIcon,
+        socialIcon:InstagramIcon,
         socialLink:""
     },
     {
@@ -126,12 +125,7 @@ const Socials=[
     },
     {
         id:4,
-        socialIcon:InstagramIcon,
-        socialLink:""
-    },
-    {
-        id:5,
-        socialIcon:YoutubeIcon,
+        socialIcon:FacebookIcon,
         socialLink:""
     },
 ]

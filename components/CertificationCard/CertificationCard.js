@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import UpArrow from '../../public/resources/images/up-arrow-white-icon.png'
 
 function CertificationCard({id,courseImg,courseAlt,courseHead,courseEnrolled,courseRating,courseType}) {
   return (
@@ -19,7 +20,12 @@ function CertificationCard({id,courseImg,courseAlt,courseHead,courseEnrolled,cou
             <Image src={courseType} alt={courseAlt}/>
         </div>
       </div>
-      <button className='lg:mt-[20px] mt-[12px] w-full py-[12px] text-center bg-[#3940A0] text-[#ffffff] rounded-[6px]'>Known more</button>
+      <button className='flex items-center justify-center gap-[4px] lg:mt-[20px] mt-[12px] w-full py-[12px] text-center bg-[#3940A0] rounded-[6px]'>
+        <span className='inline-block text-[#ffffff] text-[16px]  leading-[24px] tracking-wide'>Known more</span>
+        <span className='inline-block'>
+            <Image src={UpArrow} width={24}/>
+        </span>
+      </button>
     </div>
   )
 }

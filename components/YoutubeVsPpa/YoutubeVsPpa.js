@@ -49,7 +49,7 @@ function YoutubeVsPpa() {
             <div className='mt-[12px]'>
                 {
                     FeaturesData.map((feature)=>(
-                        <FeaturesTable {...feature}/>
+                        <FeaturesTable key={feature.id} {...feature}/>
                     ))
                 }
             </div>

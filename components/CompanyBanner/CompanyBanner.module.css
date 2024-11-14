@@ -1,0 +1,18 @@
+.logos{
+    overflow: hidden;
+    display: flex;
+    /* gap: 80px; */
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logoSlide{
+    animation: 35s slide infinite linear;
+}

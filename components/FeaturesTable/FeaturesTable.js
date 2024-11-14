@@ -5,7 +5,7 @@ function FeaturesTable({id,featureTxt,featuresIcons}) {
   return (
     <div key={id} className='flex justify-between'>
         <div className='mt-[8px]'>
-            <h3 className='text-[#F8FAFC] text-[20px] leading-[28px] tracking-wide'>{featureTxt}</h3>
+            <h3 className='font-gilroymedium text-[#F8FAFC] text-[20px] leading-[28px] tracking-wide'>{featureTxt}</h3>
         </div>
         <div className='flex gap-[8px] mt-[8px]'>
             {

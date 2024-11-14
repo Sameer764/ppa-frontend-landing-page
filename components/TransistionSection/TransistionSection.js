@@ -8,11 +8,11 @@ function TransistionSection() {
     <div className='bg-[#F1F5F9] px-[64px] py-[60px]'>
       <h1 className='text-center text-[48px] leading-[64px] tracking-wide'>How We Help You In Transition</h1>
       <div className='flex flex-col justify-center items-center mt-[40px]'>
-        <h3 className='w-full ml-20 italic text-[32px] leading-[40px] tracking-wide'>Before</h3>
+        <h3 className='w-full ml-20 font-gilroybolditalic text-[32px] leading-[40px] tracking-wide'>Before</h3>
         <div className='flex flex-wrap gap-[24px] mt-[20px]'>
             {
                 BeforeTransistion.map((before)=>(
-                    <BeforeTransistionCard {...before}/>
+                    <BeforeTransistionCard key={before.id} {...before}/>
                 ))
             }
         </div>
@@ -22,7 +22,7 @@ function TransistionSection() {
         <div className='flex flex-wrap gap-[24px] mt-[20px]'>
             {
                 AfterTransistion.map((after)=>(
-                    <AfterTransistionCard {...after}/>
+                    <AfterTransistionCard key={after.id} {...after}/>
                 ))
             }
         </div>
