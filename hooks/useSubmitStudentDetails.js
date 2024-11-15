@@ -7,11 +7,10 @@ const useSubmitStudentDetails = (resetForm) => {
     const [isSubmitted, setIsSubmitted] = useState(false);
 
     const submitStudentDetails = async (data) => {
-        let success = true;
+        setError(false);
+        let success = false;
         try {
             await axios.post(`${process.env.NEXT_PUBLIC_MISC_URL}/addTfpStudentDetails`, data);
-            setIsSubmitted(true);
-            setError(false);
             success = true;
         } catch (err) {
             setError(err?.response?.data?.message || err.message || "Something went wrong...");
@@ -21,8 +20,11 @@ const useSubmitStudentDetails = (resetForm) => {
             return success;
         }
     };
+    const resetSubmitStatus =()=> {
+        setIsSubmitted(false);
+    }
 
-    return { loading, error, isSubmitted, setIsSubmitted, submitStudentDetails };
+    return { loading, error, isSubmitted, resetSubmitStatus, submitStudentDetails };
 };
 
 export default useSubmitStudentDetails;

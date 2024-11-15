@@ -5,7 +5,7 @@ import Styles from './StoryCard.module.css'
 
 function StoryCard({id,studentPic,studentName,studentRole,studentCompany,linkedinLink,studentReview}) {
   return (
-    <div key={id} className={`${Styles['story-card']} w-[421px] bg-[#ffffff] p-[20px] rounded-[20px]`}>
+    <div className={`${Styles['story-card']} w-[421px] bg-[#ffffff] p-[20px] rounded-[20px]`}>
         <div className='flex justify-between'>
             <div className='flex gap-[12px] items-center'>
                 <div className='w-[60px]'>

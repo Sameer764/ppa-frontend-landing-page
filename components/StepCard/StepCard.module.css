@@ -41,7 +41,7 @@
     display: flex;
     gap: 8px;
     top: 25%;
-    left: 10%;
+    left: 0%;
     transform: translateX(-80%);
     opacity: 0;
     transition: all 1s ease;
@@ -62,8 +62,8 @@
     display: flex;
     flex-direction: row-reverse;
     gap: 34px;
-    top: 20%;
-    left: -6.5%;
+    top: 15%;
+    left: 4.5%;
     opacity: 0;
     transform: translateX(70%);
     transition: all 1s ease;
@@ -85,8 +85,8 @@
     height: 248px;
     display: flex;
     gap: 35px;
-    top: 35%;
-    left: 0;
+    top: 5%;
+    left: -20%;
     opacity: 0;
     transform: translateX(-50%);
     transition: all 1s ease;
@@ -107,8 +107,8 @@
     display: flex;
     flex-direction: row-reverse;
     gap: 34px;
-    top: 50%;
-    left: 13%;
+    top: 20%;
+    left: 25%;
     opacity: 0;
     transform: translateX(30%);
     transition: all 1s ease;
@@ -127,7 +127,7 @@
 
 .last-card{
     transform: translateY(100%);
-    opacity: 1;
+    opacity: 0;
     transition: all 1s ease;
 }
 

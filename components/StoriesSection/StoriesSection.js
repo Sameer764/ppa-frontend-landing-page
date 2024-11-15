@@ -7,6 +7,13 @@ import StoryCard from '../StoryCard/StoryCard'
 import UpArrow from '../../public/resources/images/up-arrow-white-icon.png'
 
 function StoriesSection() {
+  const columns = [[], [], []];
+
+  StoriesStudents.forEach((student, index) => {
+    columns[index % 3].push(student);
+  });
+
+  console.log("**!",columns)
   return (
     <div className='bg-[#F1F5F9] py-[60px]'>
       <div className='flex justify-between max-w-[1312px] mx-auto'>
@@ -27,18 +34,38 @@ function StoriesSection() {
                 Read More Stories
               </span>
               <span className='inline-block'>
-                  <Image src={UpArrow} width={24}/>
+                  <Image src={UpArrow} alt='up-arrow' width={24}/>
               </span>
             </button>
         </div>
       </div>
-      <div className='mt-[40px] flex flex-wrap justify-center gap-[24px]'>
+      <div className="mt-[40px] flex justify-center gap-[24px] max-w-[1312px] mx-auto">
+        <div className="flex flex-col gap-[24px]">
+          {columns[0].map((student) => (
+            <StoryCard key={student.id} {...student} />
+          ))}
+        </div>
+
+        <div className="flex flex-col gap-[24px]">
+          {columns[1].map((student) => (
+            <StoryCard key={student.id} {...student} />
+          ))}
+        </div>
+
+        <div className="flex flex-col gap-[24px]">
+          {columns[2].map((student) => (
+            <StoryCard key={student.id} {...student} />
+          ))}
+        </div>
+      </div>
+
+      {/* <div className='mt-[40px] flex flex-wrap justify-center gap-[24px] max-w-[1312px] mx-auto'>
             {
                 StoriesStudents.map((student)=>(
                     <StoryCard key={student.id} {...student}/>
                 ))
             }
-       </div>
+       </div> */}
     </div>
   )
 }

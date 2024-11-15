@@ -6,7 +6,8 @@ import PythonImg from '../../public/resources/images/course-python-img.png'
 import FrontendImg from '../../public/resources/images/course-frontend-img.png'
 import courseEnrolled from '../../public/resources/images/course-enrolled.png'
 import CourseRating from '../../public/resources/images/course-rating.png'
-import CourseType from '../../public/resources/images/course-type.png'
+import StudentFriendly from '../../public/resources/images/student-friendly-icon.png'
+import ProfessionalFriendly from '../../public/resources/images/professional-friendly-icon.png'
 
 const Courses=[
     {
@@ -16,7 +17,7 @@ const Courses=[
         courseHead:"Backend with Java Spring Boot",
         courseEnrolled:courseEnrolled,
         courseRating:CourseRating,
-        courseType:CourseType
+        courseType:StudentFriendly
     },
     {
         id:2,
@@ -25,7 +26,7 @@ const Courses=[
         courseHead:"Low Level Design & Concurrency",
         courseEnrolled:courseEnrolled,
         courseRating:CourseRating,
-        courseType:CourseType
+        courseType:ProfessionalFriendly
     },
     {
         id:3,
@@ -34,7 +35,7 @@ const Courses=[
         courseHead:"Data Structures & Algorithms",
         courseEnrolled:courseEnrolled,
         courseRating:CourseRating,
-        courseType:CourseType
+        courseType:StudentFriendly
     },
     {
         id:4,
@@ -43,7 +44,7 @@ const Courses=[
         courseHead:"Begin Programming with C++",
         courseEnrolled:courseEnrolled,
         courseRating:CourseRating,
-        courseType:CourseType
+        courseType:StudentFriendly
     },
     {
         id:5,
@@ -52,7 +53,7 @@ const Courses=[
         courseHead:"Became Python Expert",
         courseEnrolled:courseEnrolled,
         courseRating:CourseRating,
-        courseType:CourseType
+        courseType:StudentFriendly
     },
     {
         id:6,
@@ -61,7 +62,7 @@ const Courses=[
         courseHead:"Become a  Frontend Engineer",
         courseEnrolled:courseEnrolled,
         courseRating:CourseRating,
-        courseType:CourseType
+        courseType:StudentFriendly
     },
 ]
 

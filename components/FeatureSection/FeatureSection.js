@@ -6,7 +6,7 @@ function FeatureSection() {
   return (
     <div className='text-center bg-[#F1F5F9] lg:px-[64px] lg:py-[60px] px-[20px] py-[40px]'>
       <h1 className='lg:text-[48px] lg:leading-[64px] text-[24px] leading-[32px] text-[#231F20]'>Why Choose Our Courses?</h1>
-      <div className='lg:mt-[40px] mt-[20px] flex flex-wrap lg:gap-[20px] gap-[12px] justify-center'>
+      <div className='mx-auto max-w-[1312px] lg:mt-[40px] mt-[20px] flex flex-wrap lg:gap-[20px] gap-[12px] justify-center'>
         {
             Features.map((feature)=>(
                 <FeatureCard key={feature.id} {...feature}/>

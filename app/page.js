@@ -34,20 +34,20 @@ export default function Home() {
   return (
     <>
       <div className="ppa-landing-page" ref={bannerRef}>
-        <Banner isFormHighlighted={isFormHighlighted}/>
-        <InPerson/>
-        <CompanyBanner/>
-        <ProgramSection navigateToBanner={navigateToBanner}/>
-        <CourseSection/>
-        <FeatureSection/>
-        <YoutubeVsPpa/>
-        <TransistionSection navigateToBanner={navigateToBanner}/>
-        <LearningPlans/>
-        <StoriesSection/>
-        <Instructor/>
-        <CommunityBanner/>
-        <YoutubeSection/>
-        <BlogsSection/>
+        {/* <Banner isFormHighlighted={isFormHighlighted}/> */}
+        {/* <InPerson/> */}
+        {/* <CompanyBanner/> */}
+        {/* <ProgramSection navigateToBanner={navigateToBanner}/> */}
+        {/* <CourseSection/> */}
+        {/* <FeatureSection/> */}
+        {/* <YoutubeVsPpa/> */}
+        {/* <TransistionSection navigateToBanner={navigateToBanner}/> */}
+        {/* <LearningPlans/> */}
+        {/* <StoriesSection/> */}
+        {/* <Instructor/> */}
+        {/* <CommunityBanner/> */}
+        {/* <YoutubeSection/> */}
+        {/* <BlogsSection/> */}
         <Footer/>
       </div>
     </>

@@ -11,7 +11,7 @@ import ApplicationModal from './ApplicationModal'
 import useSubmitStudentDetails from '@/hooks/useSubmitStudentDetails'
 
 function Banner({isFormHighlighted}) {
-    const { submitStudentDetails, loading, error, isSubmitted, setIsSubmitted } = useSubmitStudentDetails();
+    const { submitStudentDetails, loading, resetSubmitStatus, error, isSubmitted } = useSubmitStudentDetails();
     const mobileNumberRef = useRef();
 
     const handleSubmit = async (e) => {
@@ -31,7 +31,7 @@ function Banner({isFormHighlighted}) {
     };
 
     const closeModal = () => {
-        setIsSubmitted(false);
+        resetSubmitStatus();
         document.body.classList.remove("disable-scroll");
     };
   return (

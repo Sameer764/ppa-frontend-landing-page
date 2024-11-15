@@ -125,7 +125,6 @@ const StoriesStudents=[
         linkedinLink:null,
         studentReview:["I have always been a person who wanted a teacher and some proper guidance, and I think that Programming Pathshala is best for it."]
     },
-    ,
     {
         id:12,
         studentPic:StudentImg12,
@@ -135,7 +134,6 @@ const StoriesStudents=[
         linkedinLink:null,
         studentReview:["Thank you so much for the awesome course. I am feeling very much comfortable with LLD questions now. I was able to apply the right design pattern at the right place in one of my interviews with ClearTrip. Vivek sir has been very helpful throughout my journey, and I am very grateful. This course helped me crack the first LLD round of ClearTrip!"]
     },
-    ,
     {
         id:13,
         studentPic:StudentImg13,
@@ -145,7 +143,6 @@ const StoriesStudents=[
         linkedinLink:null,
         studentReview:["Whatever I am today, I owe it to Programming Pathshala and their life-changing course 'Renaissance.' I think it is pretty much all we need to build problem-solving skills."]
     },
-    ,
     {
         id:14,
         studentPic:StudentImg14,
@@ -155,7 +152,6 @@ const StoriesStudents=[
         linkedinLink:null,
         studentReview:["The course has well-structured lectures, weekend live classes, and comprehensive problems, covered all possible variations. There was constant support from Vivek Sir, Bharat Sir and Anoop Sir who were always accessible, and were a source of inspiration throughout the journey."]
     },
-    ,
     {
         id:15,
         studentPic:StudentImg15,

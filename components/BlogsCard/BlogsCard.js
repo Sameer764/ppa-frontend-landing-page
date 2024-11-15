@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 function BlogsCard({id,blogImg,blogHead,blogPara,blogProfile,blogAuthor,blogTimeline}) {
   return (
-    <div key={id} className='w-[421px] p-[12px] border border-[#e2e8f0] rounded-[20px]'>
+    <div className='w-[421px] p-[12px] border border-[#e2e8f0] rounded-[20px]'>
       <div className='w-[397px] h-[228px]'>
         <Image src={blogImg} alt='blog-img'/>
       </div>

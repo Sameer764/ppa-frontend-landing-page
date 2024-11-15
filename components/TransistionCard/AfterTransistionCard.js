@@ -4,7 +4,7 @@ import AfterTick from '../../public/resources/images/after-tick-img.png'
 
 function AfterTransistionCard({id,AfterImg,AfterTxt}) {
     return (
-      <div key={id} className='lg:w-[310px] w-[162px] bg-[#ffffff] lg:p-[20px] rounded-[20px]'>
+      <div className='lg:w-[310px] w-[162px] bg-[#ffffff] lg:p-[20px] rounded-[20px]'>
         <div className='relative'>
           <div className='absolute lg:w-[40px] w-[17px] z-10'>
               <Image src={AfterTick} alt='after-tick'/>

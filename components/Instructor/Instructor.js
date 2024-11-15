@@ -7,15 +7,15 @@ import Linkedin from '../../public/resources/images/linkedin-icon.png'
 function Instructor() {
   return (
     <div className='lg:py-[60px]  lg:flex-row flex-col py-[40px] w-[335px] lg:w-full mx-auto'>
-      <h1 className="relative text-3xl text-black pb-2 text-center">
+      <h1 className="mx-auto max-w-[1018px] relative text-3xl text-black pb-2 text-center">
         <span className='lg:text-[48px] lg:leading-[64px] text-[24px] leading-[32px] tracking-wide'>Learn with Industry Experienced Instructor</span>
         <span
-            className="hidden lg:inline absolute left-[530px] bottom-0 w-[720px] h-[4px] bg-[#4659CA]"
+            className="hidden lg:inline absolute left-[28%] bottom-0 w-[720px] h-[4px] bg-[#4659CA]"
             style={{ marginTop: '4px' }}
         ></span>
       </h1>
       <div className='flex lg:flex-row flex-col lg:gap-[40px] gap-[20px] justify-center lg:mt-[36px] mt-[20px]'>
-        <div className='lg:max-w-[241px] w-[160px] mx-auto lg:mx-0'>
+        <div className='lg:w-[241px] w-[160px] mx-auto lg:mx-0'>
             <Image src={MentorImg} alt='mentor-img'/>
         </div>
         <div className='max-w-[839px]'>

@@ -4,8 +4,8 @@ import { AboutUs, PopularPrograms, Courses, Contacts, Socials } from '@/Constant
 
 function Footer() {
     return (
-        <div className='bg-[#181b43] py-[40px] flex justify-center'>
-            <div className='flex gap-[40px]'>
+        <div className='bg-[#181b43] py-[40px] lg:px-0 px-[20px] flex justify-center'>
+            <div className='flex lg:flex-row flex-col lg:gap-[40px] gap-[20px]'>
                 <div>
                     <h3 className='text-[#f8fafc] text-[16px] leading-[20px] tracking-wide uppercase'>About us</h3>
                     <div className='flex flex-col gap-[20px] mt-[12px]'>
@@ -16,7 +16,7 @@ function Footer() {
                         }
                     </div>
                 </div>
-                <div className='w-[431px]'>
+                <div className='lg:w-[431px] -order-[1] lg:order-none'>
                     <h3 className='text-[#f8fafc] text-[16px] leading-[20px] tracking-wide uppercase'>Popular ProgramS</h3>
                     <div className='mt-[12px] flex flex-col gap-[20px]'>
                         {

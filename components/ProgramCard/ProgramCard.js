@@ -5,7 +5,7 @@ import LocationIcon from '../../public/resources/images/location-red-icon.png'
 
 function ProgramCard({id,programMode,programImg,programAlt,programLocation,programHead,programFeatures,programBtn}) {
   return (
-    <div key={id}>
+    <div>
         <div>
             <h3 className='text-[#020617] lg:text-[32px] lg:leading-[40px] text-[20px] leading-[28px] tracking-wide'>{programMode}</h3>
             <div className='lg:mt-[24px] mt-[12px] max-w-[646px] bg-[#f1f5f9] lg:bg-[#FFFFFF] lg:p-[20px] p-0  rounded-[20px]'>
@@ -33,7 +33,7 @@ function ProgramCard({id,programMode,programImg,programAlt,programLocation,progr
                     <button className='flex items-center gap-[4px] lg:mt-[20px] mt-[12px] lg:w-fit w-full bg-[#3940A0] py-[12px] px-[72px] rounded-[12px] border-none'>
                         <span className='inline-block text-[#ffffff] text-[16px] leading-[24px] tracking-wide'>{programBtn}</span>
                         <span className='inline-block'>
-                            <Image src={UpArrow} width={24}/>
+                            <Image src={UpArrow} alt='up-arrow' width={24}/>
                         </span>
                     </button>
                 </div>

@@ -23,7 +23,7 @@ function YoutubeVsPpa() {
                 <h1 className='text-[#F8FAFC] lg:text-[40px] lg:leading-[52px] text-[24px] leading-[32px] tracking-wide'>Youtube /Other Platform</h1>
             </div>
         </div>
-        <div className='mt-[40px]'>
+        <div className='mt-[40px] max-w-[1240px] mx-auto'>
             <div className='flex justify-between'>
                 <div className='flex items-center'>
                     <h3 className='text-[#F8FAFC] lg:text-[20px] lg:leading-[28px] text-[16px] leading-[24px] tracking-wide'>FEATURES</h3>
