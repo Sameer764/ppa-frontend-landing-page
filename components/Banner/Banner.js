@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import {useRef} from 'react'
 import Image from 'next/image'
 import StudentRating from '../../public/resources/images/student-rating-img.png'
@@ -10,7 +10,7 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 import ApplicationModal from './ApplicationModal'
 import useSubmitStudentDetails from '@/hooks/useSubmitStudentDetails'
 
-function Banner() {
+function Banner({isFormHighlighted}) {
     const { submitStudentDetails, loading, error, isSubmitted, setIsSubmitted } = useSubmitStudentDetails();
     const mobileNumberRef = useRef();
 
@@ -58,7 +58,8 @@ function Banner() {
                 </button>
             </div>
         </div>
-        <div className='lg:max-w-[498px] w-full bg-[#F8FAFC] rounded-[20px] px-6 py-5'>
+        <div className={`${isFormHighlighted ? "border-[1px] border-[#F59E0B] shadow-[0px_0px_20px_0px_#FBBF24]" : ""
+                    } transistion-all ease-in-out duration-[2000ms] lg:max-w-[498px] w-full bg-[#F8FAFC] rounded-[20px] px-6 py-5`}>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label className='font-gilroysemibold font-normal text-[16px] leading-[24px] text-[#020617]'>Name</label>

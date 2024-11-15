@@ -1,3 +1,5 @@
+'use client'
+import { useState,useRef } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Banner from "@/components/Banner/Banner";
@@ -17,17 +19,29 @@ import YoutubeSection from "@/components/YoutubeSection/YoutubeSection";
 import YoutubeVsPpa from "@/components/YoutubeVsPpa/YoutubeVsPpa";
 
 export default function Home() {
+  const [isFormHighlighted, setIsFormHighlighted] = useState(false);
+    const bannerRef = useRef(null);
+
+    const navigateToBanner = () => {
+        setTimeout(() => {
+            setIsFormHighlighted(true);
+        }, 600);
+        setTimeout(() => {
+            setIsFormHighlighted(false);
+        }, 4600);
+        bannerRef.current.scrollIntoView({ behavior: "smooth" });
+    };
   return (
     <>
-      <div className="ppa-landing-page">
-        <Banner/>
+      <div className="ppa-landing-page" ref={bannerRef}>
+        <Banner isFormHighlighted={isFormHighlighted}/>
         <InPerson/>
         <CompanyBanner/>
-        <ProgramSection/>
+        <ProgramSection navigateToBanner={navigateToBanner}/>
         <CourseSection/>
         <FeatureSection/>
         <YoutubeVsPpa/>
-        <TransistionSection/>
+        <TransistionSection navigateToBanner={navigateToBanner}/>
         <LearningPlans/>
         <StoriesSection/>
         <Instructor/>

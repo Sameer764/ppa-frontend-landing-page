@@ -1,8 +1,9 @@
+'use client'
 import React from 'react'
 import {Programs} from '../../Constants/MainPageConstants/ProgramConstants'
 import ProgramCard from '../ProgramCard/ProgramCard'
 
-function ProgramSection() {
+function ProgramSection({navigateToBanner}) {
   return (
     <div className='bg-[#F1F5F9] lg:py-[60px] py-[40px] lg:px-[0px] px-[20px]'>
       <h1 className='text-center lg:text-[48px] lg:leading-[64px] text-[24px] leading-[32px] tracking-wide text-[#020617]'>Choose Your Path To Success</h1>
@@ -16,7 +17,7 @@ function ProgramSection() {
       </div>
       <div className='text-center'>
         <h1 className='mt-[40px] lg:text-[48px] lg:leading-[64px] text-[24px] leading-[32px] tracking-wide text-[#020617]'>Not Sure Which Course To Choose?</h1>
-        <button className="mt-[20px]  lg:w-[305px] w-full bg-[#3940A0] py-[12px] rounded-[10px] border-none text-[#FFFFFF] font-normal text-[16px] leading-[24px]">
+        <button onClick={navigateToBanner} className="mt-[20px]  lg:w-[305px] w-full bg-[#3940A0] py-[12px] rounded-[10px] border-none text-[#FFFFFF] font-normal text-[16px] leading-[24px]">
           Book A Free Consultation Now
         </button>
       </div>

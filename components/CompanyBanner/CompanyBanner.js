@@ -16,7 +16,7 @@ function CompanyBanner() {
     <div className='py-[20px]'>
       <h2 className='text-center text-xl text-[#000000]'>Our Students are placed at:</h2>
       <div className={styles.logos}>
-        <div className={`${styles.logoSlide} flex justify-center items-center gap-[80px] mt-[20px]`}>
+        <div className={`${styles.logoSlide} flex justify-center items-center lg:gap-[80px] gap-[40px] mt-[20px]`}>
           <div className='w-[100px]'>
               <Image src={GoogleIcon} alt="google-icon"/>
           </div>
@@ -42,7 +42,7 @@ function CompanyBanner() {
               <Image src={OracleIcon} alt="oracle-icon"/>
           </div>
         </div>
-        <div className={`${styles.logoSlide} ml-[80px] flex justify-center items-center gap-[80px] mt-[20px]`}>
+        <div className={`${styles.logoSlide} ml-[80px] flex justify-center items-center lg:gap-[80px] gap-[40px] mt-[20px]`}>
           <div className='w-[100px]'>
               <Image src={GoogleIcon} alt="google-icon"/>
           </div>
