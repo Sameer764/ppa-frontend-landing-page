@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import AmazonLogo from '../../public/resources/images/amazon-logo.png'
+import AmazonLogo from '../../public/resources/images/amazon-logo.svg'
 import MentorImg from '../../public/resources/images/mentor-vivek-img.png'
 import Linkedin from '../../public/resources/images/linkedin-icon.png'
 
@@ -24,11 +24,11 @@ function Instructor() {
                 <h3 className='text-[20px] leading-[28px] tracking-wide'>Vivekanand Vivek</h3>
                 <div className='flex items-center gap-[12px]'>
                     <h3 className='mt-[4px] text-[20px] leading-[28px] tracking-wide'>IIT BHU Alumni, Ex-SDE</h3>
-                    <div className='w-[66px] relative top-[4px]'>
+                    <div className='w-[66px] relative top-[4px'>
                         <Image src={AmazonLogo} alt='amazon-logo'/>
                     </div>
                 </div>
-                <div className='w-[24px] mt-[5px]'>
+                <div className='w-[24px] mt-[5px] cursor-pointer'>
                     <Image src={Linkedin} alt='linkedin-icon'/>
                 </div>
             </div>

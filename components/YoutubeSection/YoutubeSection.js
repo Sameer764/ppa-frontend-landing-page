@@ -7,6 +7,8 @@ import youtubeImg2 from '../../public/resources/images/youtube-img-2.png'
 import youtubeImg3 from '../../public/resources/images/youtube-img-3.png'
 import youtubeImg4 from '../../public/resources/images/youtube-img-4.png'
 import youtubeImg5 from '../../public/resources/images/youtube-img-5.png'
+import NextArrow from '../SliderArrows/NextArrow';
+import PrevArrow from '../SliderArrows/PrevArrow';
 
 function YoutubeSection() {
   let settings = {
@@ -17,9 +19,11 @@ function YoutubeSection() {
     slidesToScroll: 3,
     initialSlide: 0,
     autoplay: true,
-    speed: 5000,
-    autoplaySpeed: 9000,
-    cssEase: "linear",
+    speed: 3000,
+    autoplaySpeed: 4000,
+    // cssEase: "linear",
+    nextArrow: <NextArrow top={-55} right={0}/>,
+    prevArrow: <PrevArrow top={-55} right={13}/>,
 
     responsive: [
       {
@@ -36,12 +40,12 @@ function YoutubeSection() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2
         }
       },
       {
         breakpoint: 480,
         settings: {
+          arrows:true,
           slidesToShow: 1,
           slidesToScroll: 1
         }
@@ -50,15 +54,15 @@ function YoutubeSection() {
   };
 
   return (
-    <div className='bg-[#f1f5f9] py-[60px]'>
+    <div className='bg-[#f1f5f9] lg:py-[60px] lg:px-0 py-[40px] px-[20px]'>
       <div className='max-w-[1312px] mx-auto'>
         <div className='flex justify-between max-w-[1312px]'>
-          <h1 className='text-[48px] leading-[64px] tracking-wide max-w-[636px]'>Watch Free Videos on our YouTube Channel</h1>
-          <button className='w-[348px] h-[48px] text-[#ffffff] text-[16px] leading-[24px] tracking-wide py-[12px] bg-[#dc2626] text-center rounded-[10px]'>Visit our Youtube Channel</button>
+          <h1 className='lg:text-[48px] lg:leading-[64px] text-[24px] leading-[32px] tracking-wide max-w-[239px] lg:max-w-[636px]'>Watch Free Videos on our YouTube Channel</h1>
+          <button className='lg:block hidden w-[348px] h-[48px] text-[#ffffff] text-[16px] leading-[24px] tracking-wide py-[12px] bg-[#dc2626] text-center rounded-[10px]'>Visit our Youtube Channel</button>
         </div>
-        <div className='slider-container mt-[40px]'>
-          <Slider {...settings}>
-            <div className='w-[400px]'>
+        <div className='youtube-slider-container mt-[40px] relative'>
+          <Slider {...settings} className='relative'>
+            <div>
                 <Image src={youtubeImg1} alt='youtube-img-1'/>
             </div>
             <div>
@@ -75,6 +79,7 @@ function YoutubeSection() {
             </div>
           </Slider>
         </div>
+        <button className='mx-auto lg:hidden block lg:w-[348px] w-full h-[48px] text-[#ffffff] text-[16px] leading-[24px] tracking-wide py-[12px] bg-[#dc2626] text-center rounded-[10px]'>Subscribe to our Youtube Channel</button>
       </div>
     </div>
   )

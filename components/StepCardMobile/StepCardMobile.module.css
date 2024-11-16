@@ -1,0 +1,58 @@
+.step-1{
+    order: 3;
+}
+
+.step-2{
+    order: 4;
+}
+
+.step-3{
+    order: 1;
+}
+
+.step-4{
+    order: 2;
+}
+
+.step-three .step-div{
+    background-color: #4659CA;
+}
+
+.step-four .step-div{
+    background: #059669;
+}
+
+.step-one .step-div{
+    background: #D97706;
+}
+
+.step-two .step-div{
+    background: #DC2626;
+}
+
+.icon {
+    width: 20px;
+    height: 28px;
+    color: #ffffff;
+}
+
+.step-three ul,.step-one ul,.step-two ul,.step-four ul{
+    padding: 12px 12px 12px 36px;
+    list-style-type: disc;
+}
+
+.step-three ul{
+    background: #F2F4FC;
+}
+
+.step-four ul{
+    background: #D1FAE5;
+}
+
+.step-one ul{
+    background: #FEF3C7;
+}
+
+.step-two ul{
+    background: #FEE2E2;
+}

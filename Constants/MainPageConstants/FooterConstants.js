@@ -101,7 +101,7 @@ const Contacts=[
         contactTxt:"514, Iconic Corenthum Tower, Noida Sector 62, Noida."
     },
     {
-        id:1,
+        id:3,
         contactIcon:MailIcon,
         contactTxt:"help@programmingpathshala.com"
     },

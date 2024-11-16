@@ -40,7 +40,7 @@ function Banner({isFormHighlighted}) {
             <h1 className='font-gilroybold text-[#F8FAFC] font-normal lg:text-[56px] lg:leading-[60px] text-[32px] leading-[40px]'>Become a Tech Pro!</h1>
             <h2 className='lg:font-gilroybold font-gilroyregular mt-3 text-[#F8FAFC] font-normal lg:text-[24px] lg:leading-[32px] text-[16px] leading-[24px]'>Transform Your Skills with Our Expert-Led Courses!</h2>
             <p className='font-gilroyregular mt-10 text-[#F8FAFC] font-normal text-[20px] leading-[28px] lg:block hidden'>Gain hands-on experience, improve your coding skills, and accelerate your tech career with expert guidance and support.</p>
-            <div className='lg:mt-10 mt-[12px] bg-[#E1E7F81A] lg:w-[417px] w-full px-[24px] py-[12px] rounded-xl'>
+            <div className='lg:mt-10 mt-[12px] bg-[#E1E7F81A] lg:w-[417px] w-full lg:px-[24px] lg:py-[12px] px-[12px] py-[8px] rounded-xl'>
              <Image src={StudentRating} alt='student-rating'/>
             </div>
             <div className='mt-[40px] flex gap-[20px] lg:flex hidden'>
@@ -59,7 +59,7 @@ function Banner({isFormHighlighted}) {
             </div>
         </div>
         <div className={`${isFormHighlighted ? "border-[1px] border-[#F59E0B] shadow-[0px_0px_20px_0px_#FBBF24]" : ""
-                    } transistion-all ease-in-out duration-[2000ms] lg:max-w-[498px] w-full bg-[#F8FAFC] rounded-[20px] px-6 py-5`}>
+                    } transistion-all ease-in-out duration-[2000ms] lg:max-w-[498px] w-full bg-[#F8FAFC] rounded-[20px] lg:px-6 lg:py-5 px-[16px] py-[16px]`}>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label className='font-gilroysemibold font-normal text-[16px] leading-[24px] text-[#020617]'>Name</label>
@@ -111,7 +111,7 @@ function Banner({isFormHighlighted}) {
                         />
                     </div>
 
-                    <p className="font-gilroymedium mt-[4px] font-normal text-[14px] leading-[20px] text-[#020617] tracking-wide">
+                    <p className="font-gilroymedium mt-[4px] text-[14px] leading-[20px] text-[#020617] tracking-wide">
                         We have a strict no-spam policy and will only contact you regarding your
                         application.
                     </p>
@@ -136,7 +136,7 @@ function Banner({isFormHighlighted}) {
                 </button>
             </ApplicationModal>
         )}
-        <div className='lg:mt-[40px] mt-[20px] flex flex-col lg:gap-[20px] gap-[8px] lg:hidden w-full'>
+        <div className='flex flex-col lg:gap-[20px] gap-[8px] lg:hidden w-full'>
                 <button className='flex justify-center gap-[4px] lg:w-[268px] w-full bg-[#3940A0] py-[12px] px-[36px] rounded-[49px] border-none'>
                     <p className='text-[#FFFFFF] font-normal text-[16px] leading-[24px]'>Start 7-Days Free Trial</p>
                     <div>

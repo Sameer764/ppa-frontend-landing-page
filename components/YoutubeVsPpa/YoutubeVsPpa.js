@@ -20,7 +20,7 @@ function YoutubeVsPpa() {
                 <div className='lg:w-[56px] w-[24px]'>
                     <Image src={YoutubeIcon} alt='youtube-icon'/>
                 </div>
-                <h1 className='text-[#F8FAFC] lg:text-[40px] lg:leading-[52px] text-[24px] leading-[32px] tracking-wide'>Youtube /Other Platform</h1>
+                <h1 className='text-[#F8FAFC] text-nowrap lg:text-[40px] lg:leading-[52px] text-[24px] leading-[32px] tracking-wide'>Youtube /Other Platform</h1>
             </div>
         </div>
         <div className='mt-[40px] max-w-[1240px] mx-auto'>

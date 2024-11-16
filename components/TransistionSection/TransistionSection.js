@@ -9,7 +9,7 @@ function TransistionSection({navigateToBanner}) {
       <h1 className='lg:w-full w-[335px] lg:mx-0 mx-auto text-center lg:text-[48px] lg:leading-[64px] text-[24px] leading-[32px] tracking-wide'>How We Help You In Transition</h1>
       <div className='lg:block flex gap-[11px] justify-center'>
         <div className='max-w-[1312px] mx-auto flex flex-col justify-center items-center lg:mt-[40px] mt-[20px]'>
-          <h3 className='w-full ml-20 font-gilroybolditalic lg:text-[32px] lg:leading-[40px] text-[12px] leading-[14px] tracking-wide'>Before</h3>
+          <h3 className='w-full ml-0 lg:text-start text-center font-gilroybolditalic lg:text-[32px] lg:leading-[40px] text-[12px] leading-[14px] tracking-wide uppercase'>Before</h3>
           <div className='flex lg:flex-row flex-col lg:gap-[24px] gap-[20px] mt-[20px]'>
               {
                   BeforeTransistion.map((before)=>(
@@ -19,7 +19,7 @@ function TransistionSection({navigateToBanner}) {
           </div>
         </div>
         <div className='max-w-[1312px] mx-auto flex flex-col lg:justify-center items-center lg:mt-[40px] mt-[20px]'>
-          <h3 className='w-full ml-20 italic lg:text-[32px] lg:leading-[40px] text-[12px] leading-[14px] tracking-wide'>After</h3>
+          <h3 className='w-full ml-0 lg:text-start text-center italic lg:text-[32px] lg:leading-[40px] text-[12px] leading-[14px] tracking-wide uppercase'>After</h3>
           <div className='flex lg:flex-row flex-col lg:gap-[24px] gap-[20px] mt-[20px]'>
               {
                   AfterTransistion.map((after)=>(

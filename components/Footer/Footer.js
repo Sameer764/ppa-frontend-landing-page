@@ -11,7 +11,7 @@ function Footer() {
                     <div className='flex flex-col gap-[20px] mt-[12px]'>
                         {
                             AboutUs.map((about) => (
-                                <p key={about.id} className='font-gilroyregular text-[#f8fafc] text-[14px] leading-[20px] tracking-wide'>{about.aboutTxt}</p>
+                                <p key={about.id} className='cursor-pointer font-gilroyregular text-[#f8fafc] text-[14px] leading-[20px] tracking-wide'>{about.aboutTxt}</p>
                             ))
                         }
                     </div>
@@ -21,7 +21,7 @@ function Footer() {
                     <div className='mt-[12px] flex flex-col gap-[20px]'>
                         {
                             PopularPrograms.map((program) => (
-                                <div key={program.id} className='flex gap-[12px] items-center'>
+                                <div key={program.id} className='cursor-pointer flex gap-[12px] items-center'>
                                     <div className='w-[116px]'>
                                         <Image src={program.programImg} alt='program-img' />
                                     </div>
@@ -38,7 +38,7 @@ function Footer() {
                     <div className='mt-[12px] flex flex-col gap-[20px]'>
                         {
                             Courses.map((course) => (
-                                <p key={course.id} className='font-gilroyregular text-[#f8fafc] text-[14px] leading-[20px] tracking-wide'>{course.courseName}</p>
+                                <p key={course.id} className='cursor-pointer font-gilroyregular text-[#f8fafc] text-[14px] leading-[20px] tracking-wide'>{course.courseName}</p>
                             ))
                         }
                     </div>
@@ -49,7 +49,7 @@ function Footer() {
                         <div className='mt-[12px] flex flex-col gap-[20px] max-w-[271px]'>
                             {
                                 Contacts.map((contact) => (
-                                    <div key={contact.id} className='flex gap-[8px] items-center'>
+                                    <div key={contact.id} className='cursor-pointer flex gap-[8px] items-center'>
                                         <div className={`${contact.id === 2 ? 'w-[35px]' : 'w-[24px]'}`}>
                                             <Image src={contact.contactIcon} width={24} alt='contact-icon' />
                                         </div>
@@ -65,7 +65,7 @@ function Footer() {
                             <div className='flex gap-[12px] mt-[12px]'>
                                 {
                                     Socials.map((social) => (
-                                        <div key={social.id} className='w-[40px]'>
+                                        <div key={social.id} className='cursor-pointer w-[40px]'>
                                             <Image src={social.socialIcon} alt='social-icon' />
                                         </div>
                                     ))

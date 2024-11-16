@@ -3,13 +3,13 @@ import Image from 'next/image'
 
 function BlogsCard({id,blogImg,blogHead,blogPara,blogProfile,blogAuthor,blogTimeline}) {
   return (
-    <div className='w-[421px] p-[12px] border border-[#e2e8f0] rounded-[20px]'>
-      <div className='w-[397px] h-[228px]'>
+    <div className='relative top-0 lg:w-[421px] w-full p-[12px] lg:border lg:border-[#e2e8f0] rounded-[20px]'>
+      <div className='lg:w-[397px] w-[335px] lg:h-[228px]'>
         <Image src={blogImg} alt='blog-img'/>
       </div>
-      <h3 className='mt-[12px] text-[24px] leading-[32px] tracking-wide'>{blogHead}</h3>
-      <p className='mt-[8px] text-[16px] leading-[24px] tracking-wide text-[#4b5768]'>{blogPara}</p>
-      <div className='flex items-center gap-[12px] mt-[20px]'>
+      <h3 className='lg:mt-[12px] mt-[20px] lg:text-[24px] lg:leading-[32px] text-[20px] leading-[28px] tracking-wide'>{blogHead}</h3>
+      <p className='font-gilroyregular mt-[8px] text-[16px] leading-[24px] tracking-wide text-[#4b5768]'>{blogPara}</p>
+      <div className='flex items-center gap-[12px] lg:mt-[20px] mt-[12px]'>
         <div className='w-[40px]'>
             <Image src={blogProfile} alt='blog-profile'/>
         </div>

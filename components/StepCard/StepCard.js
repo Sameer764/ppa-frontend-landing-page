@@ -49,7 +49,7 @@ function StepCard({ id, stepWidth, stepNo, stepClass, stepDesc, stepMap, stepStu
   }, []);
 
   return (
-    <div className={`step-card step-card-${id} ${styles[stepWidth]} lg:relative`} key={id}>
+    <div className={`step-card step-card-${id} ${styles[stepWidth]} relative`}>
       <div className={`${styles[stepClass]} w-[313px] flex flex-col gap-[8px]`}>
         <h3 className='py-[8px] pl-[20px] text-[#ffffff] text-[20px] leading-[28px] tracking-wide'>{stepNo}</h3>
         <ul>
@@ -60,7 +60,7 @@ function StepCard({ id, stepWidth, stepNo, stepClass, stepDesc, stepMap, stepStu
           }
         </ul>
       </div>
-      <div className={`${styles[stepMap[1]]} lg:absolute right-0 bottom-0`}>
+      <div className={`${styles[stepMap[1]]} absolute right-0 bottom-0`}>
         {
           (stepMap.length>0)&&<Image src={stepMap[0]} alt='step-map' />
         }

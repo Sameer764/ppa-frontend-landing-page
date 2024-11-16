@@ -1,5 +1,5 @@
 'use client'
-import { useState,useRef } from "react";
+import { useState, useRef } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Banner from "@/components/Banner/Banner";
@@ -20,36 +20,36 @@ import YoutubeVsPpa from "@/components/YoutubeVsPpa/YoutubeVsPpa";
 
 export default function Home() {
   const [isFormHighlighted, setIsFormHighlighted] = useState(false);
-    const bannerRef = useRef(null);
+  const bannerRef = useRef(null);
 
-    const navigateToBanner = () => {
-        setTimeout(() => {
-            setIsFormHighlighted(true);
-        }, 600);
-        setTimeout(() => {
-            setIsFormHighlighted(false);
-        }, 4600);
-        bannerRef.current.scrollIntoView({ behavior: "smooth" });
-    };
+  const navigateToBanner = () => {
+    setTimeout(() => {
+      setIsFormHighlighted(true);
+    }, 600);
+    setTimeout(() => {
+      setIsFormHighlighted(false);
+    }, 4600);
+    bannerRef.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
       <div className="ppa-landing-page" ref={bannerRef}>
-        <Banner isFormHighlighted={isFormHighlighted}/>
-        <InPerson/>
-        <CompanyBanner/>
-        <ProgramSection navigateToBanner={navigateToBanner}/>
-        <CourseSection/>
-        <FeatureSection/>
-        <YoutubeVsPpa/>
-        <TransistionSection navigateToBanner={navigateToBanner}/>
-        <LearningPlans/>
-        <StoriesSection/>
-        <Instructor/>
-        <CommunityBanner/>
-        <YoutubeSection/>
-        <BlogsSection/>
-        <Footer/>
+        <Banner isFormHighlighted={isFormHighlighted} />
       </div>
+      <InPerson />
+      <CompanyBanner />
+      <ProgramSection navigateToBanner={navigateToBanner} />
+      <CourseSection />
+      <FeatureSection />
+      <YoutubeVsPpa />
+      <TransistionSection navigateToBanner={navigateToBanner} />
+      <LearningPlans />
+      <StoriesSection />
+      <Instructor />
+      <CommunityBanner />
+      <YoutubeSection />
+      <BlogsSection />
+      <Footer />
     </>
   );
 }

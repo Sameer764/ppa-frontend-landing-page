@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 function FeaturesTable({id,featureTxt,featuresIcons}) {
   return (
-    <div key={id} className='flex justify-between items-center'>
+    <div className='flex justify-between items-center'>
         <div className='mt-[8px] w-[130px] lg:w-[100%]'>
             <h3 className='lg:font-gilroymedium font-gilroysemibold text-[#F8FAFC] lg:text-[20px] lg:leading-[28px] text-[14px] leading-[16px] tracking-wide'>{featureTxt}</h3>
         </div>

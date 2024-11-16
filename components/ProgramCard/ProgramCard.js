@@ -16,8 +16,8 @@ function ProgramCard({id,programMode,programImg,programAlt,programLocation,progr
                     {
                         programLocation.length>0 &&
                             <span className='flex gap-[4px] items-center'>
-                                <Image src={LocationIcon} width={24} alt='location-icon'/>
-                                <span>{programLocation}</span>
+                                <Image src={LocationIcon} width={20} alt='location-icon'/>
+                                <span className='font-gilroysemibold lg:text-[16px] text-[14px] leading-[20px tracking-wide]'>{programLocation}</span>
                             </span>
                     }
                 </p>
@@ -25,13 +25,16 @@ function ProgramCard({id,programMode,programImg,programAlt,programLocation,progr
                 <div className='lg:mt-[20px] mt-[12px] flex flex-wrap lg:gap-[12px] gap-[8px]'>
                     {
                         programFeatures.map((programFeature,index)=>(
-                            <div key={index} className='text-[9px] leading-[16px] lg:text-[16px] lg:leading-[24px] font-gilroymedium w-fit lg:px-[24px] lg:py-[12px] px-[12px] py-[8px] bg-[#F1F5F9] border border-[#64748B] rounded-[32px]'>{programFeature}</div>
+                            <div key={index} className='w-fit lg:px-[24px] lg:py-[12px] px-[12px] py-[8px] bg-[#F1F5F9] border border-[#64748B] rounded-[32px]'>
+                                <p className='text-[9px] leading-[16px] lg:text-[16px] lg:leading-[24px] font-gilroymedium '>{programFeature}</p>
+                            </div>
                         ))
                     }
                 </div>
                 <div className={`${programAlt}`}>
-                    <button className='flex items-center gap-[4px] lg:mt-[20px] mt-[12px] lg:w-fit w-full bg-[#3940A0] py-[12px] px-[72px] rounded-[12px] border-none'>
-                        <span className='inline-block text-[#ffffff] text-[16px] leading-[24px] tracking-wide'>{programBtn}</span>
+                    <button className='flex justify-center items-center gap-[4px] lg:mt-[20px] mt-[12px] lg:w-fit w-full bg-[#3940A0] py-[12px] px-[72px] rounded-[12px] border-none'>
+                        <span className='lg:block hidden inline-block text-[#ffffff] text-[16px] leading-[24px] tracking-wide'>{programBtn}</span>
+                        <span className='lg:hidden inline-block text-[#ffffff] text-[16px] leading-[24px] tracking-wide'>Apply Now</span>
                         <span className='inline-block'>
                             <Image src={UpArrow} alt='up-arrow' width={24}/>
                         </span>
