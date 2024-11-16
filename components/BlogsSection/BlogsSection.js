@@ -50,8 +50,8 @@ function BlogsSection() {
     ]
   };
   return (
-    <div className='relative lg:py-[60px] lg:px-0 py-[40px] px-[8px]'>
-      <div className='flex justify-between max-w-[1312px] mx-auto lg:px-0 px-[12px]'>
+    <div className='relative lg:py-[60px] lg:px-0 py-[40px] px-[20px]'>
+      <div className='flex justify-between max-w-[1312px] mx-auto lg:px-0'>
         <h1 className='lg:max-w-[711px] max-w-[259px] lg:text-[48px] lg:leading-[64px] text-[24px] leading-[32px] tracking-wide'>Your Go-To Blog for Tech, Career Growth, and Learning</h1>
         <button className='lg:block hidden w-[193px] h-[48px] bg-[#020617] py-[12px] text-[#ffffff] text-[16px] leading-[24px] tracking-wide rounded-[12px]'>Read More Blogs</button>
       </div>

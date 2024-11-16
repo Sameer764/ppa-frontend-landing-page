@@ -25,7 +25,7 @@ function Footer() {
                                     <div className='w-[116px]'>
                                         <Image src={program.programImg} alt='program-img' />
                                     </div>
-                                    <div className='max-w-[296px]'>
+                                    <div className='lg:max-w-[296px] max-w-[207px]'>
                                         <h3 className='text-[#f8fafc] text-[14px] leading-[20px] tracking-wide'>{program.programName}</h3>
                                     </div>
                                 </div>
