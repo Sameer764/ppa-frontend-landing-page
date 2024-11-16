@@ -21,12 +21,12 @@ function Footer() {
                     <div className='mt-[12px] flex flex-col gap-[20px]'>
                         {
                             PopularPrograms.map((program) => (
-                                <div key={program.id} className='cursor-pointer flex gap-[12px] items-center'>
-                                    <div className='w-[116px]'>
+                                <div key={program.id} className='cursor-pointer flex items-center'>
+                                    <div className='lg:w-[116px] w-[113px]'>
                                         <Image src={program.programImg} alt='program-img' />
                                     </div>
                                     <div className='lg:max-w-[296px] max-w-[207px]'>
-                                        <h3 className='text-[#f8fafc] text-[14px] leading-[20px] tracking-wide'>{program.programName}</h3>
+                                        <h3 className='text-[#f8fafc] text-[14px] leading-[20px] ml-[20px] tracking-wide text-wrap'>{program.programName}</h3>
                                     </div>
                                 </div>
                             ))

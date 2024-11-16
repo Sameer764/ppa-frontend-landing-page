@@ -4,7 +4,7 @@ import Image from 'next/image'
 function BlogsCard({id,blogImg,blogHead,blogPara,blogProfile,blogAuthor,blogTimeline}) {
   return (
     <div className='relative top-0 lg:w-[421px] w-full lg:p-[12px] lg:border lg:border-[#e2e8f0] rounded-[20px]'>
-      <div className='lg:w-[397px] w-[335px] lg:h-[228px]'>
+      <div className='lg:max-w-[397px] max-w-[335px] lg:h-[228px]'>
         <Image src={blogImg} alt='blog-img'/>
       </div>
       <h3 className='lg:mt-[12px] mt-[20px] lg:text-[24px] lg:leading-[32px] text-[20px] leading-[28px] tracking-wide'>{blogHead}</h3>

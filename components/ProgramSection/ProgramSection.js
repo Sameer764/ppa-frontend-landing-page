@@ -6,7 +6,7 @@ import ProgramCard from '../ProgramCard/ProgramCard'
 function ProgramSection({navigateToBanner}) {
   return (
     <div className='bg-[#F1F5F9] lg:py-[60px] py-[40px] lg:px-[0px] px-[20px]'>
-      <h1 className='text-nowrap text-center lg:text-[48px] lg:leading-[64px] text-[24px] leading-[32px] tracking-wide text-[#020617]'>Choose Your Path To Success</h1>
+      <h1 className='text-center lg:text-[48px] lg:leading-[64px] text-[23px] leading-[32px] tracking-wide text-[#020617] text-wrap'>Choose Your Path To Success</h1>
       <p className='mt-[4px] lg:block hidden text-center text-[20px] leading-[28px] tracking-wide text-[#020617]'>Choose the learning path that best suits your goals.</p>
       <div className='flex flex-wrap lg:flex-nowrap justify-center gap-[24px] lg:mt-[40px] mt-[20px]'>
         {
