@@ -7,6 +7,7 @@ import BlogsCard from '../BlogsCard/BlogsCard'
 import Slider from "react-slick";
 import NextArrow from '../SliderArrows/NextArrow';
 import PrevArrow from '../SliderArrows/PrevArrow';
+import FlexibleLink from '../FlexibleLink/FlexibleLink';
 
 function BlogsSection() {
   let settings2 = {
@@ -53,12 +54,16 @@ function BlogsSection() {
     <div className='relative lg:py-[60px] lg:px-0 py-[40px] px-[20px]'>
       <div className='flex justify-between max-w-[1312px] mx-auto lg:px-0'>
         <h1 className='lg:max-w-[711px] max-w-[249px] lg:text-[48px] lg:leading-[64px] text-[22px] leading-[30px] tracking-wide'>Your Go-To Blog for Tech, Career Growth, and Learning</h1>
-        <button className='lg:block hidden w-[193px] h-[48px] bg-[#020617] py-[12px] text-[#ffffff] text-[16px] leading-[24px] tracking-wide rounded-[12px]'>Read More Blogs</button>
+        <FlexibleLink href={process.env.NEXT_PUBLIC_BLOGS_URL}>
+          <button className='lg:block hidden w-[193px] h-[48px] bg-[#020617] py-[12px] text-[#ffffff] text-[16px] leading-[24px] tracking-wide rounded-[12px]'>Read More Blogs</button>
+        </FlexibleLink>
       </div>
       <div className='mt-[40px] md:flex flex-wrap justify-center gap-[24px] hidden'>
         {
             BlogsData.map((blogdata)=>(
-                <BlogsCard key={blogdata.id} {...blogdata}/>
+              <FlexibleLink key={blogdata.id} href={blogdata.blogLink}>
+                <BlogsCard {...blogdata}/>
+              </FlexibleLink>
             ))
         }
       </div>
@@ -72,7 +77,9 @@ function BlogsSection() {
         </Slider>
       </div>
       <div className='px-[12px] lg:hidden block'>
-        <button className='mt-[20px] lg:w-[193px] w-full h-[48px] bg-[#020617] py-[12px] text-[#ffffff] text-[16px] leading-[24px] tracking-wide rounded-[12px]'>Read More Blogs</button>
+        <FlexibleLink href={process.env.NEXT_PUBLIC_BLOGS_URL}>
+          <button className='mt-[20px] lg:w-[193px] w-full h-[48px] bg-[#020617] py-[12px] text-[#ffffff] text-[16px] leading-[24px] tracking-wide rounded-[12px]'>Read More Blogs</button>
+        </FlexibleLink>
       </div>
     </div>
   )

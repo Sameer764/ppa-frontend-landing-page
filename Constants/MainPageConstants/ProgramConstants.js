@@ -12,7 +12,8 @@ const Programs=[
         programFeatures: ["🏢 Learn in a Corporate Ecosystem","💰 Assured Paid Internships","📚 In-depth Coursework",
             "👥 In-Person Full-Time Learning","👥 Tackle Live Industry Projects","🎓 Limited Seats Only"
         ],
-        programBtn:"Apply Now"
+        programBtn:"Apply Now",
+        programLink:`${process.env.NEXT_PUBLIC_FRONTEND_MAIN_URL}tech-fellowship-program`
     },
     {
         id: 2,
@@ -24,7 +25,8 @@ const Programs=[
         programFeatures: ["🏢 Flexible Learning","💰 Mock interview & Career Support ","📚 Personalised Plans",
             "👥 1 on 1 Mentorship","👥 Full Stack Projects","🎓 600+ DSA Problems"
         ],
-        programBtn:"Start 7-Days Free Trial"   
+        programBtn:"Start 7-Days Free Trial",
+        programLink:"/signup"
     }
 ]
 

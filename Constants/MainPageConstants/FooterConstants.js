@@ -14,32 +14,32 @@ const AboutUs=[
     {
         id:1,
         aboutTxt:"Join our Community",
-        aboutLink:""
+        aboutLink:`${process.env.NEXT_PUBLIC_COMMUNITY_URL}`
     },
     {
         id:2,
         aboutTxt:"Success Stories",
-        aboutLink:""
+        aboutLink:`${process.env.NEXT_PUBLIC_FRONTEND_RENAISSANCE_PAGE_URL}crack-coding-interviews/stories`
     },
     {
         id:3,
         aboutTxt:"Blogs",
-        aboutLink:""
+        aboutLink:`${process.env.NEXT_PUBLIC_BLOGS_URL}`
     },
     {
         id:4,
         aboutTxt:"Events",
-        aboutLink:""
+        aboutLink:`${process.env.NEXT_PUBLIC_EVENTS_URL}`
     },
     {
         id:5,
         aboutTxt:"Terms & Conditions",
-        aboutLink:""
+        aboutLink:`${process.env.NEXT_PUBLIC_FRONTEND_RENAISSANCE_PAGE_URL}terms-and-conditions`
     },
     {
         id:6,
         aboutTxt:"Refund Policy",
-        aboutLink:""
+        aboutLink:`${process.env.NEXT_PUBLIC_FRONTEND_RENAISSANCE_PAGE_URL}refund-policy`
     }
 ]
 
@@ -48,16 +48,19 @@ const PopularPrograms=[
         id:1,
         programImg:ProgramImg1,
         programName:"Tech Fellowship Program",
+        programLink:`${process.env.NEXT_PUBLIC_FRONTEND_MAIN_URL}tech-fellowship-program`
     },
     {
         id:2,
         programImg:ProgramImg2,
         programName:"Renaissance for Top Tech  Companies",
+        programLink:`${process.env.NEXT_PUBLIC_FRONTEND_RENAISSANCE_PAGE_URL}`
     },
     {
         id:3,
         programImg:ProgramImg3,
         programName:"Low Level Design & Concurrency",
+        programLink:`${process.env.NEXT_PUBLIC_FRONTEND_RENAISSANCE_PAGE_URL}low-level-design`
     },
 ]
 
@@ -65,27 +68,27 @@ const Courses=[
     {
         id:1,
         courseName:"Backend Development with Java Spring Boot",
-        courseLink:""
+        courseLink:`${process.env.NEXT_PUBLIC_FRONTEND_RENAISSANCE_PAGE_URL}java-springboot`
     },
     {
         id:2,
         courseName:"Data Structures & Algorithms Essential",
-        courseLink:""
+        courseLink:`${process.env.NEXT_PUBLIC_FRONTEND_RENAISSANCE_PAGE_URL}dsa-and-algorithms-essentials`
     },
     {
         id:3,
         courseName:"Become a Python Expert",
-        courseLink:""
+        courseLink:`${process.env.NEXT_PUBLIC_FRONTEND_RENAISSANCE_PAGE_URL}begin-with-python`
     },
     {
         id:4,
         courseName:"Begin with Programming in C++",
-        courseLink:""
+        courseLink:`${process.env.NEXT_PUBLIC_FRONTEND_RENAISSANCE_PAGE_URL}begin-with-c++`
     },
     {
         id:5,
         courseName:"Frontend Engineering Pro",
-        courseLink:""
+        courseLink:`${process.env.NEXT_PUBLIC_FRONTEND_RENAISSANCE_PAGE_URL}become-a-frontend-engineer`
     },
 ]
 
@@ -111,22 +114,22 @@ const Socials=[
     {
         id:1,
         socialIcon:YoutubeIcon,
-        socialLink:""
+        socialLink:"https://www.youtube.com/channel/UC4uPfwRHPbYlmjNMiKIdWNg"
     },
     {
         id:2,
         socialIcon:InstagramIcon,
-        socialLink:""
+        socialLink:"https://www.instagram.com/programmingpathshala/?igsh=MWd4YzBzbWs0ZmZhdQ%3D%3D"
     },
     {
         id:3,
         socialIcon:LinkedinIcon,
-        socialLink:""
+        socialLink:"https://www.linkedin.com/school/programming-pathshala/"
     },
     {
         id:4,
         socialIcon:FacebookIcon,
-        socialLink:""
+        socialLink:"https://www.linkedin.com/school/programming-pathshala/"
     },
 ]
 

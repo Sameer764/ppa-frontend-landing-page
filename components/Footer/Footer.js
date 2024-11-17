@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { AboutUs, PopularPrograms, Courses, Contacts, Socials } from '@/Constants/MainPageConstants/FooterConstants'
+import FlexibleLink from '../FlexibleLink/FlexibleLink'
 
 function Footer() {
     return (
@@ -11,7 +12,9 @@ function Footer() {
                     <div className='flex flex-col gap-[20px] mt-[12px]'>
                         {
                             AboutUs.map((about) => (
-                                <p key={about.id} className='cursor-pointer font-gilroyregular text-[#f8fafc] text-[14px] leading-[20px] tracking-wide'>{about.aboutTxt}</p>
+                                <FlexibleLink key={about.id} href={about.aboutLink}>
+                                    <p className='cursor-pointer font-gilroyregular text-[#f8fafc] text-[14px] leading-[20px] tracking-wide'>{about.aboutTxt}</p>
+                                </FlexibleLink>
                             ))
                         }
                     </div>
@@ -21,14 +24,16 @@ function Footer() {
                     <div className='mt-[12px] flex flex-col gap-[20px]'>
                         {
                             PopularPrograms.map((program) => (
-                                <div key={program.id} className='cursor-pointer flex items-center'>
-                                    <div className='lg:w-[116px] w-[113px]'>
-                                        <Image src={program.programImg} alt='program-img' />
+                                <FlexibleLink key={program.id} href={program.programLink}>
+                                    <div className='cursor-pointer flex items-center'>
+                                        <div className='lg:w-[116px] w-[113px]'>
+                                            <Image src={program.programImg} alt='program-img' />
+                                        </div>
+                                        <div className='lg:max-w-[296px] max-w-[207px]'>
+                                            <h3 className='text-[#f8fafc] text-[14px] leading-[20px] ml-[20px] tracking-wide text-wrap'>{program.programName}</h3>
+                                        </div>
                                     </div>
-                                    <div className='lg:max-w-[296px] max-w-[207px]'>
-                                        <h3 className='text-[#f8fafc] text-[14px] leading-[20px] ml-[20px] tracking-wide text-wrap'>{program.programName}</h3>
-                                    </div>
-                                </div>
+                                </FlexibleLink>
                             ))
                         }
                     </div>
@@ -38,7 +43,9 @@ function Footer() {
                     <div className='mt-[12px] flex flex-col gap-[20px]'>
                         {
                             Courses.map((course) => (
-                                <p key={course.id} className='cursor-pointer font-gilroyregular text-[#f8fafc] text-[14px] leading-[20px] tracking-wide'>{course.courseName}</p>
+                                <FlexibleLink key={course.id} href={course.courseLink}>
+                                    <p className='cursor-pointer font-gilroyregular text-[#f8fafc] text-[14px] leading-[20px] tracking-wide'>{course.courseName}</p>
+                                </FlexibleLink>
                             ))
                         }
                     </div>
@@ -66,7 +73,9 @@ function Footer() {
                                 {
                                     Socials.map((social) => (
                                         <div key={social.id} className='cursor-pointer w-[40px]'>
-                                            <Image src={social.socialIcon} alt='social-icon' />
+                                            <FlexibleLink href={social.socialLink}>
+                                                <Image src={social.socialIcon} alt='social-icon' />
+                                            </FlexibleLink>
                                         </div>
                                     ))
                                 }

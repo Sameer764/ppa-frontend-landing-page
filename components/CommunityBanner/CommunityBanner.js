@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import BannerImg from'../../public/resources/images/community-banner-img.png'
+import FlexibleLink from '../FlexibleLink/FlexibleLink'
 
 function CommunityBanner() {
   return (
@@ -23,8 +24,12 @@ function CommunityBanner() {
                         Earning Cool Rewards
                     </div>
                 </div>
-                <button className='mt-[40px] w-[160px] bg-[#3940a0] py-[12px] text-[#ffffff] rounded-[12px] lg:block hidden'>Join Now</button>
-                <button className='mt-[40px] w-full bg-[#3940a0] py-[12px] text-[#ffffff] rounded-[12px] lg:hidden'>Join Our Community</button>
+                <FlexibleLink href={process.env.NEXT_PUBLIC_COMMUNITY_URL}>
+                    <button className='mt-[40px] w-[160px] bg-[#3940a0] py-[12px] text-[#ffffff] rounded-[12px] lg:block hidden'>Join Now</button>
+                </FlexibleLink>
+                <FlexibleLink href={process.env.NEXT_PUBLIC_COMMUNITY_URL}>
+                    <button className='mt-[40px] w-full bg-[#3940a0] py-[12px] text-[#ffffff] rounded-[12px] lg:hidden'>Join Our Community</button>
+                </FlexibleLink>
             </div>
         </div>
     </div>

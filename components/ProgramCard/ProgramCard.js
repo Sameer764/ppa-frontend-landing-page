@@ -2,8 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 import UpArrow from '../../public/resources/images/up-arrow-white-icon.png'
 import LocationIcon from '../../public/resources/images/location-red-icon.png'
+import FlexibleLink from '../FlexibleLink/FlexibleLink'
 
-function ProgramCard({id,programMode,programImg,programAlt,programLocation,programHead,programFeatures,programBtn}) {
+function ProgramCard({id,programMode,programImg,programAlt,programLocation,programHead,programFeatures,programBtn,programLink}) {
   return (
     <div>
         <div>
@@ -32,13 +33,19 @@ function ProgramCard({id,programMode,programImg,programAlt,programLocation,progr
                     }
                 </div>
                 <div className={`${programAlt}`}>
-                    <button className='flex justify-center items-center gap-[4px] lg:mt-[20px] mt-[12px] lg:w-fit w-full bg-[#3940A0] py-[12px] px-[72px] rounded-[12px] border-none'>
-                        <span className='lg:block hidden inline-block text-[#ffffff] text-[16px] leading-[24px] tracking-wide'>{programBtn}</span>
-                        <span className='lg:hidden inline-block text-[#ffffff] text-[16px] leading-[24px] tracking-wide'>Apply Now</span>
-                        <span className='inline-block'>
-                            <Image src={UpArrow} alt='up-arrow' width={24}/>
-                        </span>
-                    </button>
+                    <FlexibleLink href={programLink}>
+                        <button className='flex justify-center items-center gap-[4px] lg:mt-[20px] mt-[12px] lg:w-fit w-full bg-[#3940A0] py-[12px] px-[72px] rounded-[12px] border-none'>
+                            <span className='lg:block hidden inline-block text-[#ffffff] text-[16px] leading-[24px] tracking-wide'>
+                                {programBtn}
+                            </span>
+                            <span className='lg:hidden inline-block text-[#ffffff] text-[16px] leading-[24px] tracking-wide'>
+                                Apply Now
+                            </span>
+                            <span className='inline-block'>
+                                <Image src={UpArrow} alt='up-arrow' width={24}/>
+                            </span>
+                        </button>
+                    </FlexibleLink>
                 </div>
             </div>
         </div>

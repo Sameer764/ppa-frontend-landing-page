@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import LinkedinIcon from '../../public/resources/images/linkedin-icon.png'
 import Styles from './StoryCard.module.css'
+import FlexibleLink from '../FlexibleLink/FlexibleLink'
 
 function StoryCard({id,studentPic,studentName,studentRole,studentCompany,linkedinLink,studentReview}) {
   return (
@@ -22,7 +23,9 @@ function StoryCard({id,studentPic,studentName,studentRole,studentCompany,linkedi
                 </div>
             </div>
             <div className='w-[24px] cursor-pointer'>
-                <Image src={LinkedinIcon} alt='linkedin-icon'/>
+                <FlexibleLink href={linkedinLink}>
+                    <Image src={LinkedinIcon} alt='linkedin-icon'/>
+                </FlexibleLink>
             </div>
         </div>
         {

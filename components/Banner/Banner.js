@@ -9,8 +9,9 @@ import ModalIcon from '../../public/resources/images/form-modal-img.png'
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import ApplicationModal from './ApplicationModal'
 import useSubmitStudentDetails from '@/hooks/useSubmitStudentDetails'
+import FlexibleLink from '../FlexibleLink/FlexibleLink'
 
-function Banner({isFormHighlighted}) {
+function Banner({isFormHighlighted,navigateToCourses}) {
     const { submitStudentDetails, loading, resetSubmitStatus, error, isSubmitted } = useSubmitStudentDetails();
     const mobileNumberRef = useRef();
 
@@ -44,13 +45,17 @@ function Banner({isFormHighlighted}) {
              <Image src={StudentRating} alt='student-rating'/>
             </div>
             <div className='mt-[40px] flex gap-[20px] lg:flex hidden'>
-                <button className='flex gap-[4px] w-[268px] bg-[#3940A0] py-[12px] px-[36px] rounded-[49px] border-none'>
-                    <p className='text-[#FFFFFF] font-normal text-[16px] leading-[24px]'>Start 7-Days Free Trial</p>
-                    <div>
-                        <Image src={RocketIcon} alt='rocket-icon'/>
-                    </div>
-                </button>
-                <button className='flex justify-center gap-[4px] w-[268px] bg-[#E1E7F81A] py-[12px] px-[46.5px] rounded-[49px] border-[1px] border-[#64748B]'>
+                <FlexibleLink href="/signup">
+                    <button className='flex gap-[4px] w-[268px] bg-[#3940A0] py-[12px] px-[36px] rounded-[49px] border-none'>
+                        <p className='text-[#FFFFFF] font-normal text-[16px] leading-[24px]'>
+                            Start 7-Days Free Trial
+                        </p>
+                        <div>
+                            <Image src={RocketIcon} alt='rocket-icon'/>
+                        </div>
+                    </button>
+                </FlexibleLink>
+                <button onClick={navigateToCourses} className='flex justify-center gap-[4px] w-[268px] bg-[#E1E7F81A] py-[12px] px-[46.5px] rounded-[49px] border-[1px] border-[#64748B]'>
                     <p className='font-gilroysemibold text-[#FFFFFF] font-normal text-[16px] leading-[24px]'>View Courses</p>
                     <div className='w-[20px]'>
                         <Image src={ViewIcon} alt='view-icon'/>
@@ -137,18 +142,20 @@ function Banner({isFormHighlighted}) {
             </ApplicationModal>
         )}
         <div className='flex flex-col lg:gap-[20px] gap-[8px] lg:hidden w-full'>
+            <FlexibleLink href="/signup">
                 <button className='flex justify-center gap-[4px] lg:w-[268px] w-full bg-[#3940A0] py-[12px] px-[36px] rounded-[49px] border-none'>
                     <p className='text-[#FFFFFF] font-normal text-[16px] leading-[24px]'>Start 7-Days Free Trial</p>
                     <div>
                         <Image src={RocketIcon} alt='rocket-icon'/>
                     </div>
                 </button>
-                <button className='flex justify-center gap-[4px] lg:w-[268px] w-full bg-[#E1E7F81A] py-[12px] px-[46.5px] rounded-[49px] border-[1px] border-[#64748B]'>
-                    <p className='font-gilroysemibold text-[#FFFFFF] font-normal text-[16px] leading-[24px]'>View Courses</p>
-                    <div className='w-[20px]'>
-                        <Image src={ViewIcon} alt='view-icon'/>
-                    </div>
-                </button>
+            </FlexibleLink>
+            <button onClick={navigateToCourses} className='flex justify-center gap-[4px] lg:w-[268px] w-full bg-[#E1E7F81A] py-[12px] px-[46.5px] rounded-[49px] border-[1px] border-[#64748B]'>
+                <p className='font-gilroysemibold text-[#FFFFFF] font-normal text-[16px] leading-[24px]'>View Courses</p>
+                <div className='w-[20px]'>
+                    <Image src={ViewIcon} alt='view-icon'/>
+                </div>
+            </button>
         </div>
     </div>
   )

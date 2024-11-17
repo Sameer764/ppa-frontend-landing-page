@@ -21,6 +21,7 @@ import YoutubeVsPpa from "@/components/YoutubeVsPpa/YoutubeVsPpa";
 export default function Home() {
   const [isFormHighlighted, setIsFormHighlighted] = useState(false);
   const bannerRef = useRef(null);
+  const courseRef = useRef(null);
 
   const navigateToBanner = () => {
     setTimeout(() => {
@@ -31,15 +32,22 @@ export default function Home() {
     }, 4600);
     bannerRef.current.scrollIntoView({ behavior: "smooth" });
   };
+
+  const navigateToCourses = () => {
+    courseRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <div className="ppa-landing-page" ref={bannerRef}>
-        <Banner isFormHighlighted={isFormHighlighted} />
+        <Banner isFormHighlighted={isFormHighlighted} navigateToCourses={navigateToCourses} />
       </div>
       <InPerson />
       <CompanyBanner />
       <ProgramSection navigateToBanner={navigateToBanner} />
-      <CourseSection />
+      <div ref={courseRef}>
+        <CourseSection />
+      </div>
       <FeatureSection />
       <YoutubeVsPpa />
       <TransistionSection navigateToBanner={navigateToBanner} />

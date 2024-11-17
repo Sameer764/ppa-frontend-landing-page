@@ -1,8 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 import UpArrow from '../../public/resources/images/up-arrow-white-icon.png'
+import FlexibleLink from '../FlexibleLink/FlexibleLink'
 
-function CertificationCard({id,courseImg,courseAlt,courseHead,courseEnrolled,courseRating,courseType}) {
+function CertificationCard({id,courseImg,courseAlt,courseHead,courseEnrolled,courseRating,courseType,courseLink}) {
   return (
     <div className='lg:w-[421px] w-full lg:p-[12px] p-[0px] lg:border lg:border-[#E2E8F0] lg:bg-[#ffffff] rounded-[20px]'>
       <div>
@@ -20,12 +21,14 @@ function CertificationCard({id,courseImg,courseAlt,courseHead,courseEnrolled,cou
             <Image src={courseType} alt={courseAlt}/>
         </div>
       </div>
-      <button className='flex items-center justify-center gap-[4px] lg:mt-[20px] mt-[12px] w-full py-[12px] text-center bg-[#3940A0] rounded-[6px]'>
-        <span className='inline-block text-[#ffffff] text-[16px]  leading-[24px] tracking-wide'>Known more</span>
-        <span className='inline-block'>
-            <Image src={UpArrow} alt='up-arrow' width={24}/>
-        </span>
-      </button>
+      <FlexibleLink href={courseLink}>
+        <button className='flex items-center justify-center gap-[4px] lg:mt-[20px] mt-[12px] w-full py-[12px] text-center bg-[#3940A0] rounded-[6px]'>
+          <span className='inline-block text-[#ffffff] text-[16px]  leading-[24px] tracking-wide'>Known more</span>
+          <span className='inline-block'>
+              <Image src={UpArrow} alt='up-arrow' width={24}/>
+          </span>
+        </button>
+      </FlexibleLink>
     </div>
   )
 }

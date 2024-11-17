@@ -5,6 +5,7 @@ import StudentReviewImg from '../../public/resources/images/stories-review-img.p
 import { StoriesStudents } from '@/Constants/MainPageConstants/StoriesConstants'
 import StoryCard from '../StoryCard/StoryCard'
 import UpArrow from '../../public/resources/images/up-arrow-white-icon.png'
+import FlexibleLink from '../FlexibleLink/FlexibleLink'
 
 function StoriesSection() {
   const MobileStoriesStudentsData = StoriesStudents.slice(0, 4);
@@ -30,6 +31,7 @@ function StoriesSection() {
             </div>
         </div>
         <div>
+          <FlexibleLink href={`${process.env.NEXT_PUBLIC_FRONTEND_RENAISSANCE_PAGE_URL}crack-coding-interviews/stories`}>
             <button className='lg:flex hidden justify-center gap-[4px] items-center w-[228px] bg-[#020617] py-[12px] rounded-[12px]'>
               <span className='inline-block text-[#ffffff] text-[16px] leading-[24px] tracking-wide'>
                 Read More Stories
@@ -38,6 +40,7 @@ function StoriesSection() {
                   <Image src={UpArrow} alt='up-arrow' width={24}/>
               </span>
             </button>
+          </FlexibleLink>
         </div>
       </div>
       <div className="mt-[40px] lg:flex hidden justify-center gap-[24px] max-w-[1312px] mx-auto">
@@ -67,14 +70,16 @@ function StoriesSection() {
         }
       </div>
       <div className='lg:hidden px-[20px]'>
-        <button className='mt-[20px] flex justify-center gap-[4px] items-center w-full bg-[#020617] py-[12px] rounded-[12px]'>
-            <span className='inline-block text-[#ffffff] text-[16px] leading-[24px] tracking-wide'>
-              Read More Stories
-            </span>
-            <span className='inline-block'>
-                <Image src={UpArrow} alt='up-arrow' width={24}/>
-            </span>
-        </button>
+        <FlexibleLink href={`${process.env.NEXT_PUBLIC_FRONTEND_RENAISSANCE_PAGE_URL}crack-coding-interviews/stories`}>
+          <button className='mt-[20px] flex justify-center gap-[4px] items-center w-full bg-[#020617] py-[12px] rounded-[12px]'>
+              <span className='inline-block text-[#ffffff] text-[16px] leading-[24px] tracking-wide'>
+                Read More Stories
+              </span>
+              <span className='inline-block'>
+                  <Image src={UpArrow} alt='up-arrow' width={24}/>
+              </span>
+          </button>
+        </FlexibleLink>
       </div>
     </div>
   )

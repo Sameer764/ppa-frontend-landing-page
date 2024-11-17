@@ -3,6 +3,7 @@ import Image from 'next/image'
 import AmazonLogo from '../../public/resources/images/amazon-logo.svg'
 import MentorImg from '../../public/resources/images/mentor-vivek-img.png'
 import Linkedin from '../../public/resources/images/linkedin-icon.png'
+import FlexibleLink from '../FlexibleLink/FlexibleLink'
 
 function Instructor() {
   return (
@@ -29,7 +30,9 @@ function Instructor() {
                     </div>
                 </div>
                 <div className='w-[24px] mt-[5px] cursor-pointer'>
+                  <FlexibleLink href={'https://www.linkedin.com/in/vivekanand-vivek-7a4ab388/'}>
                     <Image src={Linkedin} alt='linkedin-icon'/>
+                  </FlexibleLink>
                 </div>
             </div>
         </div>

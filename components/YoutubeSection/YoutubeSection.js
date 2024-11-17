@@ -9,6 +9,7 @@ import youtubeImg4 from '../../public/resources/images/youtube-img-4.png'
 import youtubeImg5 from '../../public/resources/images/youtube-img-5.png'
 import NextArrow from '../SliderArrows/NextArrow';
 import PrevArrow from '../SliderArrows/PrevArrow';
+import FlexibleLink from '../FlexibleLink/FlexibleLink';
 
 function YoutubeSection() {
   let settings = {
@@ -58,28 +59,42 @@ function YoutubeSection() {
       <div className='max-w-[1312px] mx-auto'>
         <div className='flex justify-between max-w-[1312px]'>
           <h1 className='lg:text-[48px] lg:leading-[64px] text-[24px] leading-[32px] tracking-wide max-w-[239px] lg:max-w-[636px]'>Watch Free Videos on our YouTube Channel</h1>
-          <button className='lg:block hidden w-[348px] h-[48px] text-[#ffffff] text-[16px] leading-[24px] tracking-wide py-[12px] bg-[#dc2626] text-center rounded-[10px]'>Visit our Youtube Channel</button>
+          <FlexibleLink href={`https://www.youtube.com/@ProgrammingPathshala`}>
+            <button className='lg:block hidden w-[348px] h-[48px] text-[#ffffff] text-[16px] leading-[24px] tracking-wide py-[12px] bg-[#dc2626] text-center rounded-[10px]'>Visit our Youtube Channel</button>
+          </FlexibleLink>
         </div>
         <div className='youtube-slider-container mt-[40px] relative'>
           <Slider {...settings} className='relative'>
-            <div>
+            <div className='border-none'>
+              <FlexibleLink href={'https://www.youtube.com/watch?v=5eu0PAX__Gc&list=PL8ALCSKTY-0trtGwo1v823v9VeJZTsb12&index=31'}>
                 <Image src={youtubeImg1} alt='youtube-img-1'/>
+              </FlexibleLink>
             </div>
-            <div>
+            <div className='border-none'>
+              <FlexibleLink href={'https://www.youtube.com/watch?v=0dP3nFlsXsY&list=PL8ALCSKTY-0trtGwo1v823v9VeJZTsb12&index=21'}>
                 <Image src={youtubeImg2} alt='youtube-img-2'/>
+              </FlexibleLink>
             </div>
-            <div>
+            <div className='border-none'>
+              <FlexibleLink href={'https://www.youtube.com/watch?v=Je4AuyryI5I&list=PL8ALCSKTY-0uLZeyhD35lv9FS0kVbMiGB&index=1'}>
                 <Image src={youtubeImg3} alt='youtube-img-3'/>
+              </FlexibleLink>
             </div>
-            <div>
+            <div className='border-none'>
+              <FlexibleLink href={'https://www.youtube.com/watch?v=8rmngl9sqrM&list=PL8ALCSKTY-0sAuIkcGZsO-ZL6JjzV0nqu'}>
                 <Image src={youtubeImg4} alt='youtube-img-4'/>
+              </FlexibleLink>
             </div>
-            <div>
+            <div className='border-none'>
+              <FlexibleLink href={'https://www.youtube.com/watch?v=5z0L6m1QKNg'}>
                 <Image src={youtubeImg5} alt='youtube-img-5'/>
+              </FlexibleLink>
             </div>
           </Slider>
         </div>
-        <button className='mx-auto lg:hidden block lg:w-[348px] w-full h-[48px] text-[#ffffff] text-[16px] leading-[24px] tracking-wide py-[12px] bg-[#dc2626] text-center rounded-[10px]'>Subscribe to our Youtube Channel</button>
+        <FlexibleLink href={`https://www.youtube.com/@ProgrammingPathshala`}>
+          <button className='mx-auto lg:hidden block lg:w-[348px] w-full h-[48px] text-[#ffffff] text-[16px] leading-[24px] tracking-wide py-[12px] bg-[#dc2626] text-center rounded-[10px]'>Subscribe to our Youtube Channel</button>
+        </FlexibleLink>
       </div>
     </div>
   )

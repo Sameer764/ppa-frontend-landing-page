@@ -11,7 +11,8 @@ const BlogsData=[
         blogPara:`When working with arrays, problems often involve looking at groups of elements, or "windows," within...`,
         blogProfile:BlogProfile,
         blogAuthor:"Programming Pathshala",
-        blogTimeline:"September 21, 2024  8 Minutes"
+        blogTimeline:"September 21, 2024  8 Minutes",
+        blogLink:`${process.env.NEXT_PUBLIC_BLOGS_URL}sliding-window-minimum-number-of-swaps-to-group-all-elements-together/99`
     },
     {
         id:2,
@@ -20,7 +21,8 @@ const BlogsData=[
         blogPara:"Time Complexity: O(KNlogK), where N is the total number of nodes across all lists. This complexity ari...",
         blogProfile:BlogProfile,
         blogAuthor:"Programming Pathshala",
-        blogTimeline:"September 21, 2024  8 Minutes"
+        blogTimeline:"September 21, 2024  8 Minutes",
+        blogLink:`${process.env.NEXT_PUBLIC_BLOGS_URL}sieve-of-eratosthenes/107`
     },
     {
         id:3,
@@ -29,7 +31,8 @@ const BlogsData=[
         blogPara:"I never thought I’d join Google because I already had my offer from Oracle, so I had the mindset that...",
         blogProfile:BlogProfile,
         blogAuthor:"Programming Pathshala",
-        blogTimeline:"September 21, 2024  8 Minutes"
+        blogTimeline:"September 21, 2024  8 Minutes",
+        blogLink:`${process.env.NEXT_PUBLIC_BLOGS_URL}jdk-jre-jvm/95`
     },
 ]
 

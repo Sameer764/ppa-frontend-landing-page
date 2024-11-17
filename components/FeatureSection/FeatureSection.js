@@ -1,6 +1,7 @@
 import React from 'react'
 import { Features } from '@/Constants/MainPageConstants/FeatureConstants'
 import FeatureCard from '../FeatureCard/FeatureCard'
+import FlexibleLink from '../FlexibleLink/FlexibleLink'
 
 function FeatureSection() {
   return (
@@ -13,7 +14,9 @@ function FeatureSection() {
             ))
         }
       </div>
-      <button className='w-[316px] mx-auto lg:mt-[40px] mt-[20px] py-[12px] bg-[#3940A0] text-[#ffffff] text-[16px] leading-[24px] rounded-[10px]'>Start 7-Days Free Trial</button>
+      <FlexibleLink href='/signup'>
+        <button className='w-[316px] mx-auto lg:mt-[40px] mt-[20px] py-[12px] bg-[#3940A0] text-[#ffffff] text-[16px] leading-[24px] rounded-[10px]'>Start 7-Days Free Trial</button>
+      </FlexibleLink>
     </div>
   )
 }

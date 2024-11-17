@@ -17,7 +17,8 @@ const Courses=[
         courseHead:"Backend with Java Spring Boot",
         courseEnrolled:courseEnrolled,
         courseRating:CourseRating,
-        courseType:StudentFriendly
+        courseType:StudentFriendly,
+        courseLink:`${process.env.NEXT_PUBLIC_FRONTEND_RENAISSANCE_PAGE_URL}java-springboot`
     },
     {
         id:2,
@@ -26,7 +27,8 @@ const Courses=[
         courseHead:"Low Level Design & Concurrency",
         courseEnrolled:courseEnrolled,
         courseRating:CourseRating,
-        courseType:ProfessionalFriendly
+        courseType:ProfessionalFriendly,
+        courseLink:`${process.env.NEXT_PUBLIC_FRONTEND_RENAISSANCE_PAGE_URL}low-level-design`
     },
     {
         id:3,
@@ -35,7 +37,8 @@ const Courses=[
         courseHead:"Data Structures & Algorithms",
         courseEnrolled:courseEnrolled,
         courseRating:CourseRating,
-        courseType:StudentFriendly
+        courseType:StudentFriendly,
+        courseLink:`${process.env.NEXT_PUBLIC_FRONTEND_RENAISSANCE_PAGE_URL}dsa-and-algorithms-essentials`
     },
     {
         id:4,
@@ -44,7 +47,8 @@ const Courses=[
         courseHead:"Begin Programming with C++",
         courseEnrolled:courseEnrolled,
         courseRating:CourseRating,
-        courseType:StudentFriendly
+        courseType:StudentFriendly,
+        courseLink:`${process.env.NEXT_PUBLIC_FRONTEND_RENAISSANCE_PAGE_URL}begin-with-c++`
     },
     {
         id:5,
@@ -53,7 +57,8 @@ const Courses=[
         courseHead:"Became Python Expert",
         courseEnrolled:courseEnrolled,
         courseRating:CourseRating,
-        courseType:StudentFriendly
+        courseType:StudentFriendly,
+        courseLink:`${process.env.NEXT_PUBLIC_FRONTEND_RENAISSANCE_PAGE_URL}begin-with-python`
     },
     {
         id:6,
@@ -62,7 +67,8 @@ const Courses=[
         courseHead:"Become a  Frontend Engineer",
         courseEnrolled:courseEnrolled,
         courseRating:CourseRating,
-        courseType:StudentFriendly
+        courseType:StudentFriendly,
+        courseLink:`${process.env.NEXT_PUBLIC_FRONTEND_RENAISSANCE_PAGE_URL}become-a-frontend-engineer`
     },
 ]
 
